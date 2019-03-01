@@ -5,9 +5,11 @@ using UnityEngine;
 public static class ResourceLoader
 {
     public static Sprite[] tile_field =  new Sprite[4];
+    public static Sprite[] tile_farm =  new Sprite[4];
 
     static ResourceLoader()
     {
         tile_field = Resources.LoadAll<Sprite>("Sprites/tile-field");
+        tile_farm = Resources.LoadAll<Sprite>("Sprites/tile-farm");
     }
 }

@@ -9,7 +9,7 @@ public class Resourcetest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = ResourceLoader.tile_field[state];
+        // this.gameObject.GetComponent<SpriteRenderer>().sprite = ResourceLoader.tile_farm[state];
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class Resourcetest : MonoBehaviour
         {
             i = 0;
             if (state == 3) { state = 0; } else { state++; }
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = ResourceLoader.tile_field[state];
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = ResourceLoader.tile_farm[state];
         }
         i++;
     }
