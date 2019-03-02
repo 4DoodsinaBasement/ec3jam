@@ -12,4 +12,19 @@ public static class ResourceLoader
         tile_field = Resources.LoadAll<Sprite>("Sprites/tile-field");
         tile_farm = Resources.LoadAll<Sprite>("Sprites/tile-farm");
     }
+
+    public static Sprite[] GetSpriteSheet(TileType tile)
+    {
+        switch (tile)
+        {
+            case TileType.Field :
+                return tile_field;
+                break;
+            case TileType.Farm :
+                return tile_farm;
+                break;
+            default :
+                return null;
+        }
+    }
 }
