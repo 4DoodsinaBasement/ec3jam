@@ -7,7 +7,7 @@ public enum Season {Spring, Summer, Fall, Winter};
 
 public class Tile : MonoBehaviour
 {
-    TileType tileType;
+    public TileType tileType;
     Season season;
 
     Sprite[] tileSprites;
