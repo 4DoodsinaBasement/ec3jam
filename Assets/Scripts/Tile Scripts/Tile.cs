@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum TileType {Field, Farm};
-public enum Season {Spring, Summer, Fall, Winter};
 
 public class Tile : MonoBehaviour
 {
     public TileType tileType;
-    Season season;
+    // Season season;
 
     Sprite[] tileSprites;
     Sprite currentSprite;
@@ -35,9 +34,9 @@ public class Tile : MonoBehaviour
 
     void NextSeason()
     {
-        if (season == Season.Winter) { season = Season.Spring; } else { season++; }
-        tileSprites = ResourceLoader.GetSpriteSheet(tileType);
-        currentSprite = tileSprites[(int)season];
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = currentSprite;
+        // if (season == Season.Winter) { season = Season.Spring; } else { season++; }
+        // tileSprites = ResourceLoader.GetSpriteSheet(tileType);
+        // currentSprite = tileSprites[(int)season];
+        // this.gameObject.GetComponent<SpriteRenderer>().sprite = currentSprite;
     }
 }
