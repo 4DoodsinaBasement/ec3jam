@@ -4,11 +4,10 @@ using UnityEngine;
 
 public static class ResourceLoader
 {
-    public static Sprite[] tileSprites =  new Sprite[2];
+    public static Sprite[] tile_field =  new Sprite[4];
 
     static ResourceLoader()
     {
-        tileSprites[0] = Resources.Load("Sprites/tile-field", typeof(Sprite)) as Sprite;
-        tileSprites[1] = Resources.Load("Sprites/tile-farm", typeof(Sprite)) as Sprite;
+        tile_field = Resources.LoadAll<Sprite>("Sprites/tile-field");
     }
 }
