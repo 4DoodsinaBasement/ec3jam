@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class DungeonMaster : MonoBehaviour
 {
     public int turnCount; // number of maxiumn turns
     public float turnTimeBaseSec; // the number of seconds in a season
@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
     public int scStarvation; // scaler used for determining how many people die from starvation
     public int scExposure; // scaler used for determining how many people die from Exposuser
     public int scFireChance; //base for fire chance 
-    int FireChance; 
 
     //buildingCount
     int bcFarmstead = 0;
