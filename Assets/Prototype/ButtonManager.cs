@@ -9,11 +9,12 @@ public class ButtonManager : MonoBehaviour
     public Button lumberButton;
     public Button marketButton;
     public Button houseButton;
+    public Text squareText;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        squareText.text = "";
     }
 
     // Update is called once per frame
@@ -22,23 +23,39 @@ public class ButtonManager : MonoBehaviour
         
     }
 
-    void SelectFarm()
+    public void SelectFarm()
     {
-
+        Debug.Log("Clicked Farm of " + gameObject.name);
+        squareText.text = "Farm";
+        DisableButtons();
     }
 
-    void SelectLumber()
+    public void SelectLumber()
     {
-
+        Debug.Log("Clicked Lumber of " + gameObject.name);
+        squareText.text = "Lumber";
+        DisableButtons();
     }
 
-    void SelectMarket()
+    public void SelectMarket()
     {
-        
+        Debug.Log("Clicked Market of " + gameObject.name);
+        squareText.text = "Market";
+        DisableButtons();
     }
 
-    void SelectHouse()
+    public void SelectHouse()
     {
-        
+        Debug.Log("Clicked House of " + gameObject.name);
+        squareText.text = "House";
+        DisableButtons();
+    }
+
+    void DisableButtons()
+    {
+        farmButton.gameObject.SetActive(false);
+        lumberButton.gameObject.SetActive(false);
+        marketButton.gameObject.SetActive(false);
+        houseButton.gameObject.SetActive(false);
     }
 }
