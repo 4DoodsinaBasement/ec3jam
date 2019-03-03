@@ -13,12 +13,13 @@ public class GameMaster : MonoBehaviour
     #region
     
     // Data
+    public TransitionHandler transitionHandler;
+    public NotificationManager notifyTray;
     public GameObject activeGridObject;
     public TileObject[] activeGrid;
     public GameObject passiveGridObject;
     public TileObject[] passiveGrid;
     public SeasonData[] seasonData;
-    public NotificationManager notifyTray;
     
     // Game Settings
     bool gameOver = false;
@@ -127,6 +128,14 @@ public class GameMaster : MonoBehaviour
                 currentTickCount = 0;
                 SeasonUpkeep();
                 Debug.Log("Season Upkeep");
+            }
+            if(currentTickCount == 9) {
+                transitionHandler.fadeOut = false;
+                transitionHandler.fadeIn = true;
+            }
+            if(currentTickCount == 0){
+                transitionHandler.fadeIn = false;
+                transitionHandler.fadeOut = true;
             }
         }
     }

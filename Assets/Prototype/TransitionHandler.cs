@@ -13,6 +13,7 @@ public class TransitionHandler : MonoBehaviour
     public int counter = 0;
     public int counter2 = 0;
     public int rate = 0;
+    public int rateOut = 0;
     public int index = 0;
     public int transitions = 10;
     List<float> transparency = new List<float>();
@@ -63,14 +64,15 @@ public class TransitionHandler : MonoBehaviour
         Image Background = TransitionItems[0].GetComponent<Image>();
         Background.gameObject.SetActive(true);
         currentColor = Background.color;
-        index = counter / rate;
         if (fadeIn)
         {
+            index = counter / rate;
             currentColor.a = transparency[(transparency.Count) - (index) - 1];
             counter++;
         }
         if (fadeOut)
         {
+            index = counter / rateOut;
             currentColor.a = transparency[index];
         }
         Background.color = currentColor;
@@ -88,7 +90,6 @@ public class TransitionHandler : MonoBehaviour
 
     public void TextTransition()
     {
-        index = counter2 / rate;
         Color currentColor;
         for (int i = 1; i < TransitionItems.Length; i++)
         {
@@ -98,10 +99,12 @@ public class TransitionHandler : MonoBehaviour
 
             if (fadeIn)
             {
+                index = counter2 / rate;
                 currentColor.a = transparency[(transparency.Count) - (index) - 1];
             }
             if (fadeOut)
             {
+                index = counter2 / rateOut;
                 currentColor.a = transparency[index];
             }
             Item.color = currentColor;
