@@ -1381,7 +1381,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 523084736}
   lumberButton: {fileID: 588229410}
   marketButton: {fileID: 1716720729}
@@ -2606,7 +2605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 197261943}
   lumberButton: {fileID: 1944005695}
   marketButton: {fileID: 1729724358}
@@ -3884,7 +3882,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 943689785}
   lumberButton: {fileID: 477185519}
   marketButton: {fileID: 1332290590}
@@ -5961,6 +5958,7 @@ RectTransform:
   - {fileID: 1631177306}
   - {fileID: 952091773}
   - {fileID: 685734783}
+  - {fileID: 2047047776}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7952,7 +7950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 514513008}
   lumberButton: {fileID: 625961202}
   marketButton: {fileID: 2023542521}
@@ -9001,7 +8998,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 478525845}
   lumberButton: {fileID: 591127650}
   marketButton: {fileID: 396298708}
@@ -9048,7 +9044,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 685734784}
-        m_MethodName: NextSeason
+        m_MethodName: NextTick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9771,6 +9767,85 @@ RectTransform:
   m_AnchoredPosition: {x: 20, y: 20}
   m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &786191078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786191079}
+  - component: {fileID: 786191081}
+  - component: {fileID: 786191080}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &786191079
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786191078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2047047776}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 290, y: 490}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &786191080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786191078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 6
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.1
+  m_Text: New Text
+--- !u!222 &786191081
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786191078}
+  m_CullTransparentMesh: 0
 --- !u!1 &787161227
 GameObject:
   m_ObjectHideFlags: 0
@@ -11643,7 +11718,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 835289436}
   lumberButton: {fileID: 52751758}
   marketButton: {fileID: 641342810}
@@ -11960,7 +12034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 478525845}
   lumberButton: {fileID: 591127650}
   marketButton: {fileID: 396298708}
@@ -12111,7 +12184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 1575543516}
   lumberButton: {fileID: 647103857}
   marketButton: {fileID: 1362446484}
@@ -12430,7 +12502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 663089568}
   lumberButton: {fileID: 1213935427}
   marketButton: {fileID: 2102022107}
@@ -12699,7 +12770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 37702067}
   lumberButton: {fileID: 2020090420}
   marketButton: {fileID: 128819988}
@@ -13358,7 +13428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 1300671600}
   lumberButton: {fileID: 413904594}
   marketButton: {fileID: 577712047}
@@ -13759,7 +13828,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e15820e87878f4748bb1a7c9dcb6a20b, type: 2}
   - {fileID: 11400000, guid: 27499ecef02e3cc4f8461250b5865ab8, type: 2}
   - {fileID: 11400000, guid: 6a7c5c28da0aa2c47b1c2ede4fbad5dd, type: 2}
-  maxTurns: 0
+  notifyManager: {fileID: 2047047775}
+  maxTurns: 12
+  currentTurns: 0
   totalTurnTime: 60
   currentTurnTime: 0
   totalTickTime: 6
@@ -13780,8 +13851,8 @@ MonoBehaviour:
   populationIncreasePercent: 0
   buildRate: 1
   starveChance: 0.5
-  exposeChance: 0
-  fireChance: 0
+  exposeChance: 0.05
+  fireChance: 0.0005
   populationEncounterBonus: 0
   grainEncounterBonus: 0
   lumberEncounterBonus: 0
@@ -13794,6 +13865,8 @@ MonoBehaviour:
   report_upkeepCost_sterling: 0
   report_grainSpentOnPop: 0
   report_starvationDeaths: 0
+  notify_exposureDeaths: 0
+  notify_lumberIncrease: 0
 --- !u!4 &1102062645
 Transform:
   m_ObjectHideFlags: 0
@@ -17593,7 +17666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 1930045714}
   lumberButton: {fileID: 980530801}
   marketButton: {fileID: 787161228}
@@ -18302,7 +18374,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 9701082}
   lumberButton: {fileID: 1198422370}
   marketButton: {fileID: 1958797897}
@@ -18363,7 +18434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 844730579}
   lumberButton: {fileID: 1708754658}
   marketButton: {fileID: 1683174304}
@@ -19285,7 +19355,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 2045087257}
   lumberButton: {fileID: 1108234321}
   marketButton: {fileID: 202029427}
@@ -19604,7 +19673,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 478525845}
   lumberButton: {fileID: 591127650}
   marketButton: {fileID: 396298708}
@@ -20110,7 +20178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 251624571}
   lumberButton: {fileID: 783921915}
   marketButton: {fileID: 1239058107}
@@ -20329,7 +20396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 226327759}
   lumberButton: {fileID: 2116691245}
   marketButton: {fileID: 1798871042}
@@ -21762,7 +21828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 1751173087}
   lumberButton: {fileID: 659253358}
   marketButton: {fileID: 1653509289}
@@ -21902,7 +21967,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 64155649}
   lumberButton: {fileID: 828661570}
   marketButton: {fileID: 1261976019}
@@ -22838,7 +22902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 747342887}
   lumberButton: {fileID: 1126779474}
   marketButton: {fileID: 1937748914}
@@ -23186,7 +23249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 59465237}
   lumberButton: {fileID: 625914228}
   marketButton: {fileID: 68405463}
@@ -23637,7 +23699,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 881033215}
   lumberButton: {fileID: 1071663006}
   marketButton: {fileID: 410874381}
@@ -25044,7 +25105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 1685171302}
   lumberButton: {fileID: 910847314}
   marketButton: {fileID: 573267134}
@@ -25263,7 +25323,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 916952023}
   lumberButton: {fileID: 449545052}
   marketButton: {fileID: 1188753203}
@@ -25888,6 +25947,96 @@ RectTransform:
   m_AnchoredPosition: {x: -20, y: 20}
   m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2047047775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047047776}
+  - component: {fileID: 2047047779}
+  - component: {fileID: 2047047778}
+  - component: {fileID: 2047047777}
+  m_Layer: 5
+  m_Name: Notifications
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2047047776
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047047775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 786191079}
+  m_Father: {fileID: 504369572}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -450, y: 0}
+  m_SizeDelta: {x: 300, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2047047777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047047775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10bb68dc028a4254587ba314b5833d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tray: {fileID: 786191080}
+  maxDisplayedNotifications: 20
+--- !u!114 &2047047778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047047775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &2047047779
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047047775}
+  m_CullTransparentMesh: 0
 --- !u!1 &2056226819
 GameObject:
   m_ObjectHideFlags: 0
@@ -26151,7 +26300,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 1403309432}
   lumberButton: {fileID: 1181277631}
   marketButton: {fileID: 17193579}
@@ -26291,7 +26439,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameMasterObject: {fileID: 1102062643}
-  gameMaster: {fileID: 0}
   farmButton: {fileID: 1874157890}
   lumberButton: {fileID: 1300106546}
   marketButton: {fileID: 948573504}

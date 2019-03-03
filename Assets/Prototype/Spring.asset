@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Spring
   m_EditorClassIdentifier: 
   seasonType: 0
+  seasonString: Spring
   PopulationMod: 1.6
   LumberMod: 1
   SterlingMod: 1

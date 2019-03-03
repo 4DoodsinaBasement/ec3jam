@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Winter
   m_EditorClassIdentifier: 
   seasonType: 3
+  seasonString: Winter
   PopulationMod: 0.4
   LumberMod: 0.8
   SterlingMod: 0.6
   BuildMod: 0.5
   StarveMod: 1.1
-  ExposeMod: 1
+  ExposeMod: 1.2
   FireMod: 0.9

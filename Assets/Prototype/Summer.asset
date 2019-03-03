@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Summer
   m_EditorClassIdentifier: 
   seasonType: 1
+  seasonString: Summer
   PopulationMod: 1
   LumberMod: 1.2
   SterlingMod: 1.3
