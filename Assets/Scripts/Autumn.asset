@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d6babeec9e4b3749a7929a85c78267e, type: 3}
   m_Name: Autumn
   m_EditorClassIdentifier: 
-  seasonType: 0
-  scLumberCamp: 0
-  scStarvation: 0
-  scExposure: 0
-  scFireChance: 0
+  seasonType: 2
+  seasonString: Autumn
+  PopulationMod: 1.2
+  LumberMod: 1
+  SterlingMod: 1.1
+  BuildMod: 1
+  StarveMod: 1
+  ExposeMod: 0
+  FireMod: 1.1

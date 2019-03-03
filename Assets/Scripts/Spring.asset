@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d6babeec9e4b3749a7929a85c78267e, type: 3}
-  m_Name: Winter
+  m_Name: Spring
   m_EditorClassIdentifier: 
   seasonType: 0
-  scLumberCamp: 0
-  scStarvation: 0
-  scExposure: 0
-  scFireChance: 0
+  seasonString: Spring
+  PopulationMod: 1.6
+  LumberMod: 1
+  SterlingMod: 1
+  BuildMod: 1
+  StarveMod: 1
+  ExposeMod: 0
+  FireMod: 0.6

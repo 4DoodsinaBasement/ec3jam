@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d6babeec9e4b3749a7929a85c78267e, type: 3}
-  m_Name: Summer
+  m_Name: Winter
   m_EditorClassIdentifier: 
-  seasonType: 1
-  scLumberCamp: 0
-  scStarvation: 0
-  scExposure: 0
-  scFireChance: 0
+  seasonType: 3
+  seasonString: Winter
+  PopulationMod: 0.4
+  LumberMod: 0.8
+  SterlingMod: 0.6
+  BuildMod: 0.5
+  StarveMod: 1.1
+  ExposeMod: 1.2
+  FireMod: 0.9
