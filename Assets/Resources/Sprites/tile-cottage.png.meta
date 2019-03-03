@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 7594e3bc29ec79045b95979144634883
+guid: bb9c7b7c928122f4fa0f40bbedde7735
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tile-farm_0
-    21300002: tile-farm_1
-    21300004: tile-farm_2
-    21300006: tile-farm_3
+    21300000: tile-cottage_0
+    21300002: tile-cottage_1
+    21300004: tile-cottage_2
+    21300006: tile-cottage_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -99,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile-farm_0
+      name: tile-cottage_0
       rect:
         serializedVersion: 2
         x: 0
         y: 195
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +113,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8a4d1bc53e8c784db3a0f8739ecaf14
+      spriteID: fdb24f201dd8a5046abf6999ced123b1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-farm_1
+      name: tile-cottage_1
       rect:
         serializedVersion: 2
         x: 0
         y: 130
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +133,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d554cba2fc65d0343b3c4d07876cff56
+      spriteID: ec645b9adca916d4fa7bca005ade5339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-farm_2
+      name: tile-cottage_2
       rect:
         serializedVersion: 2
         x: 0
         y: 65
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +153,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61041fb1afaf9554a8c447757ebae652
+      spriteID: f30217255b61a2044b4f71dc3fa82b59
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-farm_3
+      name: tile-cottage_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2bb857e7bf60814395bd0dbacb3e955
+      spriteID: ff4c966ba1dd3b7469be2691e2d6b461
       vertices: []
       indices: 
       edges: []
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 68b76e96888aa6e42acaa0b563c30e51
+    spriteID: 453229163b090024c82f0d53cf72937e
     vertices: []
     indices: 
     edges: []
