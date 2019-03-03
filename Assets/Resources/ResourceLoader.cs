@@ -11,6 +11,11 @@ public static class ResourceLoader
     public static Sprite[] spriteSheet_mill =  new Sprite[4];
     public static Sprite[] spriteSheet_market =  new Sprite[4];
 
+    public static AudioClip music_spring;
+    public static AudioClip music_summer;
+    public static AudioClip music_autumn;
+    public static AudioClip music_winter;
+
     static ResourceLoader()
     {
         spriteSheet_borderless = Resources.LoadAll<Sprite>("Sprites/tile-borderless");
@@ -19,6 +24,11 @@ public static class ResourceLoader
         spriteSheet_farm = Resources.LoadAll<Sprite>("Sprites/tile-farm");
         spriteSheet_mill = Resources.LoadAll<Sprite>("Sprites/tile-mill");
         spriteSheet_market = Resources.LoadAll<Sprite>("Sprites/tile-market");
+
+        music_spring = Resources.Load<AudioClip>("Music/Spring");
+        music_summer = Resources.Load<AudioClip>("Music/Summer");
+        music_autumn = Resources.Load<AudioClip>("Music/Autumn");
+        music_winter = Resources.Load<AudioClip>("Music/Winter");
     }
 
     public static Sprite[] GetSpriteSheet(TileType tile)
