@@ -5,7 +5,7 @@ using UnityEngine;
 public static class CottageData
 {
     public static string buildingName = "Cottage";
-    public static string buildingDescription = "";
+    public static string buildingDescription = "Prevents Exposure";
     // Build Costs
     public static float buildTime;
     public static int grainCost = 0;
@@ -25,7 +25,7 @@ public static class CottageData
 public static class FarmData
 {
     public static string buildingName = "Farm";
-    public static string buildingDescription = "";
+    public static string buildingDescription = "Produces Grain in Autumn";
     // Build Costs
     public static float buildTime;
     public static int grainCost = 10;
@@ -45,7 +45,7 @@ public static class FarmData
 public static class MillData
 {
     public static string buildingName = "Mill";
-    public static string buildingDescription = "";
+    public static string buildingDescription = "Produces Wood";
     // Build Costs
     public static float buildTime;
     public static int grainCost = 10;
@@ -65,7 +65,7 @@ public static class MillData
 public static class MarketData
 {
     public static string buildingName = "Market";
-    public static string buildingDescription = "";
+    public static string buildingDescription = "Produces Sterling";
     // Build Costs
     public static float buildTime;
     public static int grainCost = 15;

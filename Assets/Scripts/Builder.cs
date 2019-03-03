@@ -17,14 +17,13 @@ public class Builder : MonoBehaviour
     public Text cost_sterling;
     public Text upkeep_lumber;
     public Text upkeep_sterling;
-    
+
     void Start()
     {
-        infoMenu.gameObject.SetActive(false);
 
         switch (buildingType)
         {
-            case TileType.Cottage :
+            case TileType.Cottage:
                 title.text = CottageData.buildingName;
                 description.text = CottageData.buildingDescription;
                 cost_time.text = CottageData.buildTime.ToString();
@@ -34,7 +33,7 @@ public class Builder : MonoBehaviour
                 upkeep_lumber.text = CottageData.lumberUpkeep.ToString();
                 upkeep_sterling.text = CottageData.sterlingUpkeep.ToString();
                 break;
-            case TileType.Farm :
+            case TileType.Farm:
                 title.text = FarmData.buildingName;
                 description.text = FarmData.buildingDescription;
                 cost_time.text = FarmData.buildTime.ToString();
@@ -44,7 +43,7 @@ public class Builder : MonoBehaviour
                 upkeep_lumber.text = FarmData.lumberUpkeep.ToString();
                 upkeep_sterling.text = FarmData.sterlingUpkeep.ToString();
                 break;
-            case TileType.Mill :
+            case TileType.Mill:
                 title.text = MillData.buildingName;
                 description.text = MillData.buildingDescription;
                 cost_time.text = MillData.buildTime.ToString();
@@ -54,7 +53,7 @@ public class Builder : MonoBehaviour
                 upkeep_lumber.text = MillData.lumberUpkeep.ToString();
                 upkeep_sterling.text = MillData.sterlingUpkeep.ToString();
                 break;
-            case TileType.Market :
+            case TileType.Market:
                 title.text = MarketData.buildingName;
                 description.text = MarketData.buildingDescription;
                 cost_time.text = MarketData.buildTime.ToString();
@@ -65,19 +64,20 @@ public class Builder : MonoBehaviour
                 upkeep_sterling.text = MarketData.sterlingUpkeep.ToString();
                 break;
         }
+        infoMenu.gameObject.SetActive(false);
     }
 
     public void PointerEnter()
     {
         infoMenu.gameObject.SetActive(true);
     }
-    
+
     public void PointerExit()
     {
         infoMenu.gameObject.SetActive(false);
     }
-    
-    
+
+
     public void BuildCottage()
     {
         gameMaster.BuildBuilding(TileType.Cottage);
@@ -87,12 +87,12 @@ public class Builder : MonoBehaviour
     {
         gameMaster.BuildBuilding(TileType.Farm);
     }
-    
+
     public void BuildMill()
     {
         gameMaster.BuildBuilding(TileType.Mill);
     }
-    
+
     public void BuildMarket()
     {
         gameMaster.BuildBuilding(TileType.Market);
