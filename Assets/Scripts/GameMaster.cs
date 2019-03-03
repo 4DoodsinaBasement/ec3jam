@@ -11,6 +11,7 @@ public class GameMaster : MonoBehaviour
 {
     // Global Variables
     #region
+    
     // Data
     public GameObject activeGridObject;
     public TileObject[] activeGrid;
@@ -22,14 +23,17 @@ public class GameMaster : MonoBehaviour
     // Game Settings
     bool gameOver = false;
     const int ESTABLISH_YEAR = 1587;
+    public SeasonData currentSeason;
+    int currentSeasonIndex = 0;
+
+    // Time Settings
     int maxTurns = 12; // number of maxiumn turns
     public int currentTurns = 0;
     float totalTurnTime = 60;
-    public float currentTurnTime = 0;
+    public float currentTickCount = 0;
     float totalTickTime = 6;
     public float currentTickTime = 0;
-    public SeasonData currentSeason;
-    int currentSeasonIndex = 0;
+    int counter = 0;
 
     // Player Resources 
     public int populationCap = 0;
@@ -51,7 +55,7 @@ public class GameMaster : MonoBehaviour
     float buildRate = 1.0f;
     float starveChance = 0.5f;
     float exposeChance = 0.25f;
-    float fireChance = 0.1f;
+    float fireChance = 0.001f;
 
     // Encounter Bonuses
     int populationEncounterBonus = 0;
@@ -75,6 +79,7 @@ public class GameMaster : MonoBehaviour
     #endregion
 
 
+    // Mono Functions
     void Start()
     {
         currentSeason = seasonData[0];
@@ -83,7 +88,26 @@ public class GameMaster : MonoBehaviour
         
         LoadTiles();
     }
-    void Update() { }
+    void FixedUpdate()
+    {
+        currentTickTime += 0.05f;
+
+        if (currentTickTime >= totalTickTime)
+        {
+            currentTickTime = 0; currentTickCount++;
+            if (currentTickCount < 10)
+            {
+                GameTick();
+                Debug.Log("Game Tick");
+            }
+            else
+            {
+                currentTickCount = 0;
+                SeasonUpkeep();
+                Debug.Log("Season Upkeep");
+            }
+        }
+    }
 
 
     // Tile Functions
@@ -115,7 +139,6 @@ public class GameMaster : MonoBehaviour
 
 
     // Game Season Functions
-    #region
     public void SeasonUpkeep()
     {
         NextSeason();
@@ -128,6 +151,7 @@ public class GameMaster : MonoBehaviour
         CheckSeasonEncounter();
         CheckGameOver();
     } 
+    #region
     void NextSeason()
     {
         if (currentSeasonIndex == 3) { currentSeasonIndex = 0; } else { currentSeasonIndex++; }
@@ -225,7 +249,6 @@ public class GameMaster : MonoBehaviour
 
 
     // Game Tick Functions
-    #region 
     public void GameTick()
     {
         ZeroNotifications();
@@ -235,6 +258,7 @@ public class GameMaster : MonoBehaviour
         CheckTickEncounter();
         CheckGameOver();
     }
+    #region 
     void ZeroNotifications()
     {
         notify_exposureDeaths = 0;
