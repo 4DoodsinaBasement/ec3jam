@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Summer
   m_EditorClassIdentifier: 
   seasonType: 1
-  scLumberCamp: 0
-  scStarvation: 0
-  scExposure: 0
-  scFireChance: 0
+  PopulationMod: 1
+  LumberMod: 1.2
+  SterlingMod: 1.3
+  BuildMod: 0.9
+  StarveMod: 1.1
+  ExposeMod: 1
+  FireMod: 1.4
