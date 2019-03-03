@@ -21,9 +21,9 @@ public class TileObject : MonoBehaviour
         render.sprite = ResourceLoader.GetSpriteSheet(tileType)[(int)seasonType];
     }
 
-    public void NewTint()
-    {
-        float x = Random.Range(tintAmount, 1.0f);
-        render.color = new Color(x, x, x);
-    }
+    // public void NewTint()
+    // {
+    //     float x = Random.Range(tintAmount, 1.0f);
+    //     render.color = new Color(x, x, x);
+    // }
 }
