@@ -20,7 +20,6 @@ public class Builder : MonoBehaviour
 
     void Start()
     {
-
         switch (buildingType)
         {
             case TileType.Cottage:
@@ -64,6 +63,7 @@ public class Builder : MonoBehaviour
                 upkeep_sterling.text = MarketData.sterlingUpkeep.ToString();
                 break;
         }
+        
         infoMenu.gameObject.SetActive(false);
     }
 
