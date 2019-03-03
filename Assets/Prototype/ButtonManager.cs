@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     public GameObject gameMasterObject;
-    public GameMaster gameMaster;
+    GameMaster gameMaster;
     
     public Button farmButton;
     public Button lumberButton;
@@ -18,7 +18,7 @@ public class ButtonManager : MonoBehaviour
     void Start()
     {
         gameMaster = gameMasterObject.GetComponent<GameMaster>();
-        squareText.text = "";
+        // squareText.text = "";
     }
 
     // Update is called once per frame
@@ -26,6 +26,9 @@ public class ButtonManager : MonoBehaviour
     {
         
     }
+
+    public void NextSeason() { gameMaster.SeasonUpkeep(); }
+    public void NextTick() { gameMaster.GameTick(); }
 
     public void SelectFarm()
     {
@@ -66,8 +69,6 @@ public class ButtonManager : MonoBehaviour
             DisableButtons();
         } else { Debug.Log("...No..."); }
     }
-
-    public void NextSeason() { gameMaster.SeasonUpkeep(); }
 
     void DisableButtons()
     {

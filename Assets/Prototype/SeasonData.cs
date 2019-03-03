@@ -6,6 +6,7 @@ using UnityEngine;
 public class SeasonData : ScriptableObject
 {
     public SeasonType seasonType;
+    public string seasonString = "";
 
     public float PopulationMod = 1.0f;
     public float LumberMod = 1.0f;

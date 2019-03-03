@@ -9,9 +9,14 @@ public enum TileType {Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fo
 public class GameMaster : MonoBehaviour
 {
     public SeasonData[] seasonData;
+    public GameObject notifyManager;
+    NotificationManager notifyTray;
     
     // Game Settings
+    bool gameOver = false;
+    const int ESTABLISH_YEAR = 1587;
     public int maxTurns = 12; // number of maxiumn turns
+    public int currentTurns = 0;
     public float totalTurnTime = 60;
     public float currentTurnTime = 0;
     public float totalTickTime = 6;
@@ -38,8 +43,8 @@ public class GameMaster : MonoBehaviour
     public float populationIncreasePercent;
     public float buildRate = 1.0f;
     public float starveChance = 0.5f;
-    public float exposeChance;
-    public float fireChance;
+    public float exposeChance = 0.25f;
+    public float fireChance = 0.1f;
 
     // Encounter Bonuses
     public int populationEncounterBonus = 0;
@@ -57,45 +62,45 @@ public class GameMaster : MonoBehaviour
     public int report_grainSpentOnPop = 0;
     public int report_starvationDeaths = 0;
 
+    // Tick Notification
+    public int notify_exposureDeaths = 0;
+    public int notify_lumberIncrease = 0;
+
 
     // Start is called before the first frame update
     void Start()
     {
         currentSeason = seasonData[0];
+        notifyTray = notifyManager.GetComponent<NotificationManager>();
+        notifyTray.AddNotification("Welcome to Ranoke!");
+        notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
     }
 
     // Update is called once per frame
     void Update() { }
 
 
-    // Game Time Functions
+    // Game Season Functions
     #region
     public void SeasonUpkeep()
     {
         NextSeason();
         ZeroReports();
-        IncreasePopulation();
+        PopulationIncrease();
         CollectGrain();
         CollectSterling();
         UpkeepCost();
         PopulationEat();
-    }
-
-    void GameTick()
-    {
-
-    }
-    #endregion
-
-
-    // Game Phase Functions
-    #region 
+        CheckSeasonEncounter();
+        CheckGameOver();
+    } 
     void NextSeason()
     {
         if (currentSeasonIndex == 3) { currentSeasonIndex = 0; } else { currentSeasonIndex++; }
         currentSeason = seasonData[currentSeasonIndex];
+        currentTurns++;
+        notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
     }
-    
     void ZeroReports()
     {
         report_populationIncrease = 0;
@@ -107,15 +112,13 @@ public class GameMaster : MonoBehaviour
         report_grainSpentOnPop = 0;
         report_starvationDeaths = 0;
     }
-
-    void IncreasePopulation()
+    void PopulationIncrease()
     {
         populationIncreasePercent = Random.Range(0.0f, 0.1f);
         report_populationIncrease = (int)(population * populationIncreasePercent * currentSeason.PopulationMod) + populationEncounterBonus;
         populationEncounterBonus = 0;
         population += report_populationIncrease;
     }
-
     void CollectGrain()
     {
         if (currentSeason.seasonType == SeasonType.Autumn)
@@ -125,13 +128,12 @@ public class GameMaster : MonoBehaviour
         }
         grain += report_grainIncrease;
     }
-
     void CollectSterling()
     {
         report_sterlingIncrease += (int)(marketCount * MarketData.sterlingIncrease * currentSeason.SterlingMod) + sterlingEncounterBonus;
+        sterlingEncounterBonus = 0;
         sterling += report_sterlingIncrease;
     }
-
     void UpkeepCost()
     {
         // Grain Upkeep
@@ -162,7 +164,6 @@ public class GameMaster : MonoBehaviour
         lumber -= (report_upkeepCost_lumber < lumber) ? report_upkeepCost_lumber : lumber;
         sterling -= (report_upkeepCost_sterling < sterling) ? report_upkeepCost_sterling : sterling;
     }
-
     void PopulationEat()
     {
         if (population <= grain)
@@ -181,16 +182,88 @@ public class GameMaster : MonoBehaviour
         grain -= (report_grainSpentOnPop < grain) ? report_grainSpentOnPop : grain;
         population -= (report_starvationDeaths < population) ? report_starvationDeaths : population;
     }
-
-    bool PercentChance(float percentage)
+    void CheckSeasonEncounter()
     {
-        float dieRoll = Random.value;
-        return dieRoll < percentage;
+        // TODO: Build Encounters
     }
     #endregion
 
+    // Game Tick Functions
+    #region 
+    public void GameTick()
+    {
+        ZeroNotifications();
+        PopulationExposure();
+        CollectLumber();
+        CheckFire();
+        CheckTickEncounter();
+        CheckGameOver();
+    }
+    void ZeroNotifications()
+    {
+        notify_exposureDeaths = 0;
+        notify_lumberIncrease = 0;
+    }
+    void PopulationExposure()
+    {
+        if (population > populationCap) // the bad stuff
+        {
+            for (int exposedPopulation = population - populationCap; exposedPopulation > 0; exposedPopulation--)
+            {
+                if (PercentChance(exposeChance * currentSeason.ExposeMod)) { notify_exposureDeaths++; }
+            }
+            if (notify_exposureDeaths > 0) { notifyTray.AddNotification(((notify_exposureDeaths < population) ? notify_exposureDeaths : population) + " people died of exposure."); }
+        }
+        population -= (notify_exposureDeaths < population) ? notify_exposureDeaths : population;
+    }
+    void CollectLumber()
+    {
+        notify_lumberIncrease += (int)(millCount * MillData.lumberIncrease * currentSeason.LumberMod) + lumberEncounterBonus;
+        lumberEncounterBonus = 0;
+        if (notify_lumberIncrease > 0) { notifyTray.AddNotification("You gained " + notify_lumberIncrease + " lumber!"); }
+        lumber += notify_lumberIncrease;
+    }
+    void CheckFire()
+    {
+        List<TileType> buildingsBuilt = new List<TileType>();
+        for (int i = 0; i < cottageCount; i++) { buildingsBuilt.Add(TileType.Cottage); }
+        for (int i = 0; i < farmCount; i++) { buildingsBuilt.Add(TileType.Farm); }
+        for (int i = 0; i < millCount; i++) { buildingsBuilt.Add(TileType.Mill); }
+        for (int i = 0; i < marketCount; i++) { buildingsBuilt.Add(TileType.Market); }
 
-    // Game Build Functions
+        foreach(TileType building in buildingsBuilt)
+        {
+            if (PercentChance(fireChance * currentSeason.FireMod))
+            {
+                switch (building)
+                {
+                    case TileType.Cottage :
+                        cottageCount--;
+                        break;
+                    case TileType.Farm :
+                        farmCount--;
+                        break;
+                    case TileType.Mill :
+                        millCount--;
+                        break;
+                    case TileType.Market :
+                        marketCount--;
+                        break;
+                }
+
+                notifyTray.AddNotification("A " + building.ToString() + " burned down!");
+            }
+        }
+
+        UpdatePopCap();
+    }
+    void CheckTickEncounter()
+    {
+        // TODO: Build Encounters
+    }
+    #endregion
+
+    // Game Mechanical Functions
     #region 
     public bool BuildBuilding(TileType tile)
     {
@@ -200,23 +273,70 @@ public class GameMaster : MonoBehaviour
         {
             case TileType.Cottage :
                 built = (grain >= CottageData.grainCost) && (lumber >= CottageData.lumberCost) && (sterling >= CottageData.sterlingCost);
-                if (built) { cottageCount++; grain -= CottageData.grainCost; lumber -= CottageData.lumberCost; sterling -= CottageData.sterlingCost; }
+                if (built)
+                { 
+                    cottageCount++;
+                    grain -= CottageData.grainCost;
+                    lumber -= CottageData.lumberCost;
+                    sterling -= CottageData.sterlingCost;
+                }
                 break;
             case TileType.Farm :
                 built = (grain >= FarmData.grainCost) && (lumber >= FarmData.lumberCost) && (sterling >= FarmData.sterlingCost);
-                if (built) { farmCount++; grain -= FarmData.grainCost; lumber -= FarmData.lumberCost; sterling -= FarmData.sterlingCost; }
+                if (built)
+                { 
+                    farmCount++;
+                    grain -= FarmData.grainCost; 
+                    lumber -= FarmData.lumberCost; 
+                    sterling -= FarmData.sterlingCost;
+                }
                 break;
             case TileType.Mill :
                 built = (grain >= MillData.grainCost) && (lumber >= MillData.lumberCost) && (sterling >= MillData.sterlingCost);
-                if (built) { millCount++; grain -= MillData.grainCost; lumber -= MillData.lumberCost; sterling -= MillData.sterlingCost; }
+                if (built)
+                {
+                    millCount++; 
+                    grain -= MillData.grainCost; 
+                    lumber -= MillData.lumberCost; 
+                    sterling -= MillData.sterlingCost;
+                }
                 break;
             case TileType.Market :
                 built = (grain >= MarketData.grainCost) && (lumber >= MarketData.lumberCost) && (sterling >= MarketData.sterlingCost);
-                if (built) { marketCount++; grain -= MarketData.grainCost; lumber -= MarketData.lumberCost; sterling -= MarketData.sterlingCost; }
+                if (built)
+                {
+                    marketCount++;
+                    grain -= MarketData.grainCost;
+                    lumber -= MarketData.lumberCost;
+                    sterling -= MarketData.sterlingCost;
+                }
                 break;
         }
 
+        UpdatePopCap();
+
         return built;
+    }
+    void UpdatePopCap()
+    {
+        populationCap = 0;
+        populationCap += cottageCount * CottageData.populationCapIncrease;
+        populationCap += farmCount * FarmData.populationCapIncrease;
+        populationCap += millCount * MillData.populationCapIncrease;
+        populationCap += marketCount * MarketData.populationCapIncrease;
+    }
+    bool PercentChance(float percentage)
+    {
+        float dieRoll = Random.value;
+        return dieRoll < percentage;
+    }
+    void CheckGameOver()
+    {
+        gameOver = population <= 0;
+        if (gameOver)
+        {
+            notifyTray.AddNotification("GAME OVER");
+        }
     }
     #endregion
 }
