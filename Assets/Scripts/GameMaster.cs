@@ -11,7 +11,7 @@ public class GameMaster : MonoBehaviour
 {
     // Global Variables
     #region
-    
+
     // Data
     public TransitionHandler transitionHandler;
     public NotificationManager notifyTray;
@@ -20,7 +20,7 @@ public class GameMaster : MonoBehaviour
     public GameObject passiveGridObject;
     public TileObject[] passiveGrid;
     public SeasonData[] seasonData;
-    
+
     // Game Settings
     bool gameOver = false;
     const int ESTABLISH_YEAR = 1587;
@@ -73,6 +73,7 @@ public class GameMaster : MonoBehaviour
     public int report_upkeepCost_sterling = 0;
     public int report_grainSpentOnPop = 0;
     public int report_starvationDeaths = 0;
+    public ReportManager reportMan;
 
     // Tick Notification
     public int notify_exposureDeaths = 0;
@@ -86,14 +87,14 @@ public class GameMaster : MonoBehaviour
         currentSeason = seasonData[0];
         notifyTray.AddNotification("Welcome to Roanoke!");
         notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
-        
+
         LoadTiles();
     }
     void FixedUpdate()
     {
         foreach (TileObject tile in activeGrid)
         {
-            if(tile.underConstruction)
+            if (tile.underConstruction)
             {
                 tile.buildProgress += 0.05f;
 
@@ -105,15 +106,15 @@ public class GameMaster : MonoBehaviour
 
                     switch (tile.finishedType)
                     {
-                        case TileType.Cottage : cottageCount++; break;
-                        case TileType.Farm : farmCount++; break;
-                        case TileType.Mill : millCount++; break;
-                        case TileType.Market : marketCount++; break;
+                        case TileType.Cottage: cottageCount++; break;
+                        case TileType.Farm: farmCount++; break;
+                        case TileType.Mill: millCount++; break;
+                        case TileType.Market: marketCount++; break;
                     }
                 }
             }
         }
-        
+
         currentTickTime += 0.05f;
         if (currentTickTime >= totalTickTime)
         {
@@ -126,14 +127,18 @@ public class GameMaster : MonoBehaviour
             else
             {
                 currentTickCount = 0;
-                SeasonUpkeep();
+                UpdateTiles();
+                notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
                 Debug.Log("Season Upkeep");
             }
-            if(currentTickCount == 9) {
+
+
+            if (currentTickCount == 9) {
+                SeasonUpkeep();
                 transitionHandler.fadeOut = false;
                 transitionHandler.fadeIn = true;
             }
-            if(currentTickCount == 0){
+            if (currentTickCount == 0) {
                 transitionHandler.fadeIn = false;
                 transitionHandler.fadeOut = true;
             }
@@ -148,10 +153,10 @@ public class GameMaster : MonoBehaviour
         activeGrid = activeGridObject.GetComponentsInChildren<TileObject>();
         passiveGrid = passiveGridObject.GetComponentsInChildren<TileObject>();
 
-        foreach (TileObject tile in activeGrid) 
-        { 
+        foreach (TileObject tile in activeGrid)
+        {
             tile.startType = TileType.Field;
-            tile.finishedType = TileType.Field; 
+            tile.finishedType = TileType.Field;
             tile.seasonType = currentSeason.seasonType;
         }
         foreach (TileObject tile in passiveGrid)
@@ -181,15 +186,18 @@ public class GameMaster : MonoBehaviour
         PopulationEat();
         CheckSeasonEncounter();
         CheckGameOver();
-    } 
+        UpdateSeasonalUi();
+
+
+    }
     #region
     void NextSeason()
     {
         if (currentSeasonIndex == 3) { currentSeasonIndex = 0; } else { currentSeasonIndex++; }
         currentSeason = seasonData[currentSeasonIndex];
         currentTurns++;
-        notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
-        UpdateTiles();
+        
+       
     }
     void ZeroReports()
     {
@@ -227,28 +235,28 @@ public class GameMaster : MonoBehaviour
     void UpkeepCost()
     {
         // Grain Upkeep
-        report_upkeepCost_grain += 
-            (cottageCount * CottageData.grainUpkeep) + 
-            (millCount * MillData.grainUpkeep) + 
+        report_upkeepCost_grain +=
+            (cottageCount * CottageData.grainUpkeep) +
+            (millCount * MillData.grainUpkeep) +
             (marketCount * MarketData.grainUpkeep);
-        report_upkeepCost_grain += 
-            (currentSeason.seasonType == SeasonType.Spring) ? 
+        report_upkeepCost_grain +=
+            (currentSeason.seasonType == SeasonType.Spring) ?
             (farmCount * FarmData.grainUpkeep) : 0;
 
         // Lumber Upkeep
-        report_upkeepCost_lumber += 
-            (cottageCount * CottageData.lumberUpkeep) + 
-            (farmCount * FarmData.lumberUpkeep) + 
-            (millCount * MillData.lumberUpkeep) + 
+        report_upkeepCost_lumber +=
+            (cottageCount * CottageData.lumberUpkeep) +
+            (farmCount * FarmData.lumberUpkeep) +
+            (millCount * MillData.lumberUpkeep) +
             (marketCount * MarketData.lumberUpkeep);
 
         // Sterling Upkeep
-        report_upkeepCost_sterling += 
-            (cottageCount * CottageData.sterlingUpkeep) + 
-            (farmCount * FarmData.sterlingUpkeep) + 
-            (millCount * MillData.sterlingUpkeep) + 
+        report_upkeepCost_sterling +=
+            (cottageCount * CottageData.sterlingUpkeep) +
+            (farmCount * FarmData.sterlingUpkeep) +
+            (millCount * MillData.sterlingUpkeep) +
             (marketCount * MarketData.sterlingUpkeep);
-        
+
         // Apply Report to Resources
         grain -= (report_upkeepCost_grain < grain) ? report_upkeepCost_grain : grain;
         lumber -= (report_upkeepCost_lumber < lumber) ? report_upkeepCost_lumber : lumber;
@@ -275,6 +283,24 @@ public class GameMaster : MonoBehaviour
     void CheckSeasonEncounter()
     {
         // TODO: Build Encounters
+    }
+
+    void UpdateSeasonalUi()
+    {
+        reportMan.clearQue();
+
+        int shelteredPop = (population > populationCap) ? populationCap : population;
+
+
+        //reportMan.AddNotification("Current Sheltered Poputation: " + shelteredPop);
+        reportMan.AddNotification("Births: " + report_populationIncrease);
+        if (currentSeason.seasonType == SeasonType.Autumn) { reportMan.AddNotification("Harvested: " + report_grainIncrease + " Grain"); }
+        reportMan.AddNotification("Seasonal Sterling Increase: " + report_sterlingIncrease);
+        reportMan.AddNotification("Seasonal Maintenance:    Grain: " + report_upkeepCost_grain+ "   Lumber: " + report_upkeepCost_lumber +"   Sterling: " + report_upkeepCost_sterling);
+        reportMan.AddNotification("Grain Eaten: " + report_grainSpentOnPop);
+        reportMan.AddNotification(report_starvationDeaths+ " died of starvation");
+        reportMan.SeasonUpdate(currentSeason.name, "encounter");
+        
     }
     #endregion
 
