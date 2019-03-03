@@ -14,14 +14,12 @@ public class BuildingBuilder : MonoBehaviour
     public void PointerEnter()
     {
         //If your mouse hovers over the GameObject with the script attached, output this message
-        Debug.Log("mouseing enter");
         ShowInfo();
     }
     
     public void PointerExit()
     {
         //If your mouse hovers over the GameObject with the script attached, output this message
-        Debug.Log("mouseing exit");
         HideInfo();
     }
     
