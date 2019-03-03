@@ -8,6 +8,9 @@ public class Builder : MonoBehaviour
     public GameMaster gameMaster;
     public GameObject infoMenu;
 
+    public GameObject spriteObject;
+    Image image;
+
     public TileType buildingType;
     public Text title;
     public Text description;
@@ -20,6 +23,8 @@ public class Builder : MonoBehaviour
 
     void Start()
     {
+        image = spriteObject.GetComponent<Image>();
+        
         switch (buildingType)
         {
             case TileType.Cottage:
@@ -66,6 +71,12 @@ public class Builder : MonoBehaviour
         
         infoMenu.gameObject.SetActive(false);
     }
+
+    void Update()
+    {
+        image.sprite = ResourceLoader.GetSpriteSheet(buildingType)[(int)gameMaster.currentSeason.seasonType];
+    }
+
 
     public void PointerEnter()
     {

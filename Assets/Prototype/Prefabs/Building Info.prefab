@@ -796,6 +796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameMaster: {fileID: 0}
   infoMenu: {fileID: 7815030972283873920}
+  spriteObject: {fileID: 4840771771945014212}
   buildingType: 0
   title: {fileID: 4840771771399526596}
   description: {fileID: 8484536216014056056}
