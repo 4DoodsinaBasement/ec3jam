@@ -13,3 +13,10 @@ MonoBehaviour:
   m_Name: Spring
   m_EditorClassIdentifier: 
   seasonType: 0
+  PopulationMod: 1.6
+  LumberMod: 1
+  SterlingMod: 1
+  BuildMod: 1
+  StarveMod: 1
+  ExposeMod: 0
+  FireMod: 0.6

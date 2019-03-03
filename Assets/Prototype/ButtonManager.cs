@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
+    public GameObject gameMasterObject;
+    public GameMaster gameMaster;
+    
     public Button farmButton;
     public Button lumberButton;
     public Button marketButton;
@@ -14,6 +17,7 @@ public class ButtonManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameMaster = gameMasterObject.GetComponent<GameMaster>();
         squareText.text = "";
     }
 
@@ -25,31 +29,45 @@ public class ButtonManager : MonoBehaviour
 
     public void SelectFarm()
     {
-        Debug.Log("Clicked Farm of " + gameObject.name);
-        squareText.text = "Farm";
-        DisableButtons();
+        if (gameMaster.BuildBuilding(TileType.Farm))
+        {
+            Debug.Log("Clicked Farm of " + gameObject.name);
+            squareText.text = "Farm";
+            DisableButtons();
+        } else { Debug.Log("...No..."); }
     }
 
     public void SelectLumber()
     {
-        Debug.Log("Clicked Lumber of " + gameObject.name);
-        squareText.text = "Lumber";
-        DisableButtons();
+        if (gameMaster.BuildBuilding(TileType.Mill))
+        {
+            Debug.Log("Clicked Lumber of " + gameObject.name);
+            squareText.text = "Lumber";
+            DisableButtons();
+        } else { Debug.Log("...No..."); }
     }
 
     public void SelectMarket()
     {
-        Debug.Log("Clicked Market of " + gameObject.name);
-        squareText.text = "Market";
-        DisableButtons();
+        if (gameMaster.BuildBuilding(TileType.Market))
+        {
+            Debug.Log("Clicked Market of " + gameObject.name);
+            squareText.text = "Market";
+            DisableButtons();
+        } else { Debug.Log("...No..."); }
     }
 
     public void SelectHouse()
     {
-        Debug.Log("Clicked House of " + gameObject.name);
-        squareText.text = "House";
-        DisableButtons();
+        if (gameMaster.BuildBuilding(TileType.Cottage))
+        {
+            Debug.Log("Clicked House of " + gameObject.name);
+            squareText.text = "House";
+            DisableButtons();
+        } else { Debug.Log("...No..."); }
     }
+
+    public void NextSeason() { gameMaster.SeasonUpkeep(); }
 
     void DisableButtons()
     {
