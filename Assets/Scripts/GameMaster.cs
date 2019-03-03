@@ -1,28 +1,33 @@
 ﻿using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
 public enum SeasonType {Spring = 0, Summer = 1, Autumn = 2, Winter = 3};
-public enum TileType {Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
+public enum TileType {Borderless = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
 
 
 public class GameMaster : MonoBehaviour
 {
+    public TileObject tile1;
+    public GameObject activeGridObject;
+    public TileObject[] activeGrid;
+    public GameObject passiveGridObject;
+    public TileObject[] passiveGrid;
     public SeasonData[] seasonData;
-    public GameObject notifyManager;
-    NotificationManager notifyTray;
+    public NotificationManager notifyTray;
     
     // Game Settings
     bool gameOver = false;
     const int ESTABLISH_YEAR = 1587;
-    public int maxTurns = 12; // number of maxiumn turns
+    int maxTurns = 12; // number of maxiumn turns
     public int currentTurns = 0;
-    public float totalTurnTime = 60;
+    float totalTurnTime = 60;
     public float currentTurnTime = 0;
-    public float totalTickTime = 6;
+    float totalTickTime = 6;
     public float currentTickTime = 0;
     public SeasonData currentSeason;
-    public int currentSeasonIndex = 0;
+    int currentSeasonIndex = 0;
 
     // Player Resources 
     public int populationCap = 0;
@@ -41,16 +46,16 @@ public class GameMaster : MonoBehaviour
 
     // Base Multipliers
     public float populationIncreasePercent;
-    public float buildRate = 1.0f;
-    public float starveChance = 0.5f;
-    public float exposeChance = 0.25f;
-    public float fireChance = 0.1f;
+    float buildRate = 1.0f;
+    float starveChance = 0.5f;
+    float exposeChance = 0.25f;
+    float fireChance = 0.1f;
 
     // Encounter Bonuses
-    public int populationEncounterBonus = 0;
-    public int grainEncounterBonus = 0;
-    public int lumberEncounterBonus = 0;
-    public int sterlingEncounterBonus = 0;
+    int populationEncounterBonus = 0;
+    int grainEncounterBonus = 0;
+    int lumberEncounterBonus = 0;
+    int sterlingEncounterBonus = 0;
 
     // Season Report
     public int report_populationIncrease = 0;
@@ -67,17 +72,29 @@ public class GameMaster : MonoBehaviour
     public int notify_lumberIncrease = 0;
 
 
-    // Start is called before the first frame update
     void Start()
     {
+        LoadTiles();
+        
         currentSeason = seasonData[0];
-        notifyTray = notifyManager.GetComponent<NotificationManager>();
         notifyTray.AddNotification("Welcome to Ranoke!");
         notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
+
+        // SeasonUpkeep();
     }
 
-    // Update is called once per frame
     void Update() { }
+
+    void LoadTiles()
+    {
+        // tile1.tileType = TileType.Farm;
+
+        activeGrid = activeGridObject.GetComponentsInChildren<TileObject>();
+        passiveGrid = passiveGridObject.GetComponentsInChildren<TileObject>();
+
+        for (int i = 0; i < activeGrid.Length; i++) { activeGrid[i].tileType = TileType.Farm; activeGrid[i].seasonType = SeasonType.Winter; }
+        for (int i = 0; i < passiveGrid.Length; i++) { passiveGrid[i].tileType = TileType.Borderless; passiveGrid[i].seasonType = SeasonType.Winter; }
+    }
 
 
     // Game Season Functions

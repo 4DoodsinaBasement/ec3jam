@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BuildingBuilder : MonoBehaviour
+public class Builder : MonoBehaviour
 {
+    public GameMaster gameMaster;
     public GameObject infoMenu;
+    
     void Start()
     {
         infoMenu.gameObject.SetActive(false);
@@ -14,24 +16,33 @@ public class BuildingBuilder : MonoBehaviour
     public void PointerEnter()
     {
         //If your mouse hovers over the GameObject with the script attached, output this message
-        Debug.Log("mouseing enter");
-        ShowInfo();
+        infoMenu.gameObject.SetActive(true);
     }
     
     public void PointerExit()
     {
         //If your mouse hovers over the GameObject with the script attached, output this message
-        Debug.Log("mouseing exit");
-        HideInfo();
+        infoMenu.gameObject.SetActive(false);
     }
     
-    void ShowInfo()
+    
+    public void BuildCottage()
     {
-        infoMenu.gameObject.SetActive(true);
+
     }
 
-    void HideInfo()
+    public void BuildFarm()
     {
-        infoMenu.gameObject.SetActive(false);
+        
+    }
+    
+    public void BuildMill()
+    {
+        
+    }
+    
+    public void BuildMarket()
+    {
+        
     }
 }
