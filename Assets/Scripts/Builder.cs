@@ -15,13 +15,11 @@ public class Builder : MonoBehaviour
 
     public void PointerEnter()
     {
-        //If your mouse hovers over the GameObject with the script attached, output this message
         infoMenu.gameObject.SetActive(true);
     }
     
     public void PointerExit()
     {
-        //If your mouse hovers over the GameObject with the script attached, output this message
         infoMenu.gameObject.SetActive(false);
     }
     
