@@ -17,6 +17,7 @@ public class TileObject : MonoBehaviour
 
     void Update()
     {
+        if (render == null) { render = gameObject.GetComponent<SpriteRenderer>(); }
         render.sprite = ResourceLoader.GetSpriteSheet(tileType)[(int)seasonType];
     }
 
