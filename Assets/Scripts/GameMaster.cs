@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum SeasonType {Spring = 0, Summer = 1, Autumn = 2, Winter = 3};
-public enum TileType {Borderless = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
+public enum TileType {Rocks1 = -2, Rocks2 = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
 
 
 public class GameMaster : MonoBehaviour
@@ -156,8 +156,8 @@ public class GameMaster : MonoBehaviour
         }
         foreach (TileObject tile in passiveGrid)
         {
-            tile.startType = TileType.Borderless;
-            tile.finishedType = TileType.Borderless;
+            tile.startType = TileType.Field;
+            tile.finishedType = TileType.Field;
             tile.seasonType = currentSeason.seasonType;
         }
     }

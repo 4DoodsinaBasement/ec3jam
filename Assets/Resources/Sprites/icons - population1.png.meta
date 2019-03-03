@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 2cfb6835e4c75874285686f5baee78eb
+guid: bb840840921f3b64fa58782a4301c067
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tile-borderless_0
-    21300002: tile-borderless_1
-    21300004: tile-borderless_2
-    21300006: tile-borderless_3
+    21300000: icons - population1_0
+    21300002: icons - population1_1
+    21300004: icons - population1_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -49,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile-borderless_0
+      name: icons - population1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 195
-        width: 128
-        height: 63
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +112,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 295bca723111c384cbaee9fcaad794e6
+      spriteID: 98190540538d06c449146bc60d5c2e58
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-borderless_1
+      name: icons - population1_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 130
-        width: 128
-        height: 63
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +132,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66dbab2989626c44b9272ab6ea391af3
+      spriteID: 75e86eb92405cc041bc221ebec505108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-borderless_2
+      name: icons - population1_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 65
-        width: 128
-        height: 63
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,27 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 980d1be9a7b79e24c9ffb7bf99d25ad0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile-borderless_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 877b84db3c0750449a01a4d9fd0d7733
+      spriteID: b30079e127ae96d4c9f4bab10df36da9
       vertices: []
       indices: 
       edges: []
@@ -181,7 +160,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 84d3672e894b46b4197f50d6bdd6f0bc
+    spriteID: 2047c6c1cd325ab459f749ba3349dfa9
     vertices: []
     indices: 
     edges: []

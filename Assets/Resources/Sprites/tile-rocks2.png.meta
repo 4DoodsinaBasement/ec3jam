@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: fccf7c419b4a80f46aca5b1f4b22ace1
+guid: b29ca7267b0030c4a9c12adac3175cc0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tile - lumberyard1_0
-    21300002: tile - lumberyard1_1
-    21300004: tile - lumberyard1_2
-    21300006: tile - lumberyard1_3
+    21300000: tile - blankrocky2_0
+    21300002: tile - blankrocky2_1
+    21300004: tile - blankrocky2_2
+    21300006: tile - blankrocky2_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -99,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile - lumberyard1_0
+      name: tile - blankrocky2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 195
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +113,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91659d3215a579e46a3829da609a8ca3
+      spriteID: 24b9dae14246aec448bf15449700e364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - lumberyard1_1
+      name: tile - blankrocky2_1
       rect:
         serializedVersion: 2
         x: 0
         y: 130
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +133,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0818a1ca452e71e4bbc40dea82571f4e
+      spriteID: 8b464c28bea09b448bc275bfc9f1a5db
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - lumberyard1_2
+      name: tile - blankrocky2_2
       rect:
         serializedVersion: 2
         x: 0
         y: 65
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,13 +153,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c6574b040b01074fba3f6118bf1bce5
+      spriteID: a7dae880313f76845bc257dcd2cf6e30
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - lumberyard1_3
+      name: tile - blankrocky2_3
       rect:
         serializedVersion: 2
         x: 0
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e19ffc7b9add9f46ad325df39e30c98
+      spriteID: 187b89dc55159dd4d98fec0b1a381aca
       vertices: []
       indices: 
       edges: []
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c5adb0036c1898b4aab316a1b4857a2d
+    spriteID: 4a8902dc9c80e7a4381ad3754d93e819
     vertices: []
     indices: 
     edges: []

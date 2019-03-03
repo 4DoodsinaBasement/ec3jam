@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Allocator : MonoBehaviour
 {
     public GameMaster gameMaster;
-    public Text Population;
-    public Text Grain;
-    public Text Lumber;
-    public Text Sterling;
+    public TextMeshProUGUI Population;
+    public TextMeshProUGUI Grain;
+    public TextMeshProUGUI Lumber;
+    public TextMeshProUGUI Sterling;
     void Start()
     {
 
@@ -17,7 +18,7 @@ public class Allocator : MonoBehaviour
 
     void Update()
     {
-        Population.text = gameMaster.population.ToString();
+        Population.text = gameMaster.population.ToString() + "/" + gameMaster.populationCap.ToString();
         Grain.text = gameMaster.grain.ToString();
         Lumber.text = gameMaster.lumber.ToString();
         Sterling.text = gameMaster.sterling.ToString();
