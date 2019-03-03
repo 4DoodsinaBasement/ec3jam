@@ -4,17 +4,17 @@ using UnityEngine;
 
 public static class CottageData
 {
+    public static string buildingName = "Cottage";
+    public static string buildingDescription = "";
     // Build Costs
     public static float buildTime;
     public static int grainCost = 0;
     public static int lumberCost = 50;
     public static int sterlingCost = 10;
-
     // Upkeep Costs
     public static int grainUpkeep = 0;
     public static int lumberUpkeep = 3;
     public static int sterlingUpkeep = 0;
-
     // Benefits
     public static int populationCapIncrease = 15;
     public static int grainIncrease;
@@ -24,17 +24,17 @@ public static class CottageData
 
 public static class FarmData
 {
+    public static string buildingName = "Farm";
+    public static string buildingDescription = "";
     // Build Costs
     public static float buildTime;
     public static int grainCost = 10;
     public static int lumberCost = 10;
     public static int sterlingCost = 0;
-
     // Upkeep Costs
     public static int grainUpkeep = 10; //only applied in spring, check the UpkeepCost function
     public static int lumberUpkeep = 0;
     public static int sterlingUpkeep = 0;
-
     // Benefits
     public static int populationCapIncrease = 5;
     public static int grainIncrease = 80;
@@ -44,17 +44,17 @@ public static class FarmData
 
 public static class MillData
 {
+    public static string buildingName = "Mill";
+    public static string buildingDescription = "";
     // Build Costs
     public static float buildTime;
     public static int grainCost = 10;
     public static int lumberCost = 0;
     public static int sterlingCost = 10;
-
     // Upkeep Costs
     public static int grainUpkeep = 3;
     public static int lumberUpkeep = 0;
     public static int sterlingUpkeep = 0;
-
     // Benefits
     public static int populationCapIncrease;
     public static int grainIncrease;
@@ -64,17 +64,17 @@ public static class MillData
 
 public static class MarketData
 {
+    public static string buildingName = "Market";
+    public static string buildingDescription = "";
     // Build Costs
     public static float buildTime;
     public static int grainCost = 15;
     public static int lumberCost = 50;
     public static int sterlingCost = 20;
-
     // Upkeep Costs
     public static int grainUpkeep = 0;
     public static int lumberUpkeep = 1;
     public static int sterlingUpkeep = 2;
-
     // Benefits
     public static int populationCapIncrease;
     public static int grainIncrease;
@@ -84,17 +84,17 @@ public static class MarketData
 
 public static class FortData
 {
+    public static string buildingName = "Fort";
+    public static string buildingDescription = "";
     // Build Costs
     public static float buildTime;
     public static int grainCost;
     public static int lumberCost;
     public static int sterlingCost;
-
     // Upkeep Costs
     public static int grainUpkeep;
     public static int lumberUpkeep;
     public static int sterlingUpkeep;
-
     // Benefits
     public static int populationCapIncrease;
     public static int grainIncrease;
