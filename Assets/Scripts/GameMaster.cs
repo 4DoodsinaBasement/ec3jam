@@ -97,13 +97,13 @@ public class GameMaster : MonoBehaviour
         { 
             tile.tileType = TileType.Field; 
             tile.seasonType = currentSeason.seasonType;
-            tile.NewTint();
+            // tile.NewTint();
         }
         foreach (TileObject tile in passiveGrid)
         {
             tile.tileType = TileType.Borderless;
             tile.seasonType = currentSeason.seasonType;
-            tile.NewTint();
+            // tile.NewTint();
         }
     }
     void UpdateTiles()
@@ -306,12 +306,16 @@ public class GameMaster : MonoBehaviour
     public bool BuildBuilding(TileType tile)
     {
         bool built = false;
+        bool enoughSpace = false;
+        foreach (TileObject t in activeGrid) { if (t.tileType == TileType.Field) { enoughSpace = true; } }
+
+        if (enoughSpace == false) { notifyTray.AddNotification("Not enough building space."); }
         
         switch (tile)
         {
             case TileType.Cottage :
-                built = (grain >= CottageData.grainCost) && (lumber >= CottageData.lumberCost) && (sterling >= CottageData.sterlingCost);
-                if (built)
+                built = enoughSpace && ((grain >= CottageData.grainCost) && (lumber >= CottageData.lumberCost) && (sterling >= CottageData.sterlingCost));
+                if (built && enoughSpace)
                 { 
                     cottageCount++;
                     grain -= CottageData.grainCost;
@@ -320,8 +324,8 @@ public class GameMaster : MonoBehaviour
                 }
                 break;
             case TileType.Farm :
-                built = (grain >= FarmData.grainCost) && (lumber >= FarmData.lumberCost) && (sterling >= FarmData.sterlingCost);
-                if (built)
+                built = enoughSpace && ((grain >= FarmData.grainCost) && (lumber >= FarmData.lumberCost) && (sterling >= FarmData.sterlingCost));
+                if (built && enoughSpace)
                 { 
                     farmCount++;
                     grain -= FarmData.grainCost; 
@@ -330,8 +334,8 @@ public class GameMaster : MonoBehaviour
                 }
                 break;
             case TileType.Mill :
-                built = (grain >= MillData.grainCost) && (lumber >= MillData.lumberCost) && (sterling >= MillData.sterlingCost);
-                if (built)
+                built = enoughSpace && ((grain >= MillData.grainCost) && (lumber >= MillData.lumberCost) && (sterling >= MillData.sterlingCost));
+                if (built && enoughSpace)
                 {
                     millCount++; 
                     grain -= MillData.grainCost; 
@@ -340,8 +344,8 @@ public class GameMaster : MonoBehaviour
                 }
                 break;
             case TileType.Market :
-                built = (grain >= MarketData.grainCost) && (lumber >= MarketData.lumberCost) && (sterling >= MarketData.sterlingCost);
-                if (built)
+                built = enoughSpace && ((grain >= MarketData.grainCost) && (lumber >= MarketData.lumberCost) && (sterling >= MarketData.sterlingCost));
+                if (built && enoughSpace)
                 {
                     marketCount++;
                     grain -= MarketData.grainCost;
@@ -351,10 +355,16 @@ public class GameMaster : MonoBehaviour
                 break;
         }
 
-        if (built) { activeGrid[Random.Range(0,activeGrid.Length)].tileType = tile; UpdateTiles(); }
+        if (built)
+        {
+            int randomTile;
+            do { randomTile = Random.Range(0,activeGrid.Length); }
+            while (activeGrid[randomTile].tileType != TileType.Field);
+            activeGrid[randomTile].tileType = tile;
+            UpdateTiles();
+        }
 
         UpdatePopCap();
-
         return built;
     }
     void UpdatePopCap()
