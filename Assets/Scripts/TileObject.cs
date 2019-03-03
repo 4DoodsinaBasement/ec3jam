@@ -8,6 +8,8 @@ public class TileObject : MonoBehaviour
     public SeasonType seasonType;
     public SpriteRenderer render;
 
+    float tintAmount = 0.95f;
+
     void Start()
     {
         render = gameObject.GetComponent<SpriteRenderer>();
@@ -16,5 +18,11 @@ public class TileObject : MonoBehaviour
     void Update()
     {
         render.sprite = ResourceLoader.GetSpriteSheet(tileType)[(int)seasonType];
+    }
+
+    public void NewTint()
+    {
+        float x = Random.Range(tintAmount, 1.0f);
+        render.color = new Color(x, x, x);
     }
 }

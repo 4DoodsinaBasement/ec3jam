@@ -28,21 +28,21 @@ public class Builder : MonoBehaviour
     
     public void BuildCottage()
     {
-
+        gameMaster.BuildBuilding(TileType.Cottage);
     }
 
     public void BuildFarm()
     {
-        
+        gameMaster.BuildBuilding(TileType.Farm);
     }
     
     public void BuildMill()
     {
-        
+        gameMaster.BuildBuilding(TileType.Mill);
     }
     
     public void BuildMarket()
     {
-        
+        gameMaster.BuildBuilding(TileType.Market);
     }
 }

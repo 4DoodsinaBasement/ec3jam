@@ -93,8 +93,18 @@ public class GameMaster : MonoBehaviour
         activeGrid = activeGridObject.GetComponentsInChildren<TileObject>();
         passiveGrid = passiveGridObject.GetComponentsInChildren<TileObject>();
 
-        foreach (TileObject tile in activeGrid) { tile.tileType = TileType.Field; tile.seasonType = currentSeason.seasonType; }
-        foreach (TileObject tile in passiveGrid) { tile.tileType = TileType.Borderless; tile.seasonType = currentSeason.seasonType; }
+        foreach (TileObject tile in activeGrid) 
+        { 
+            tile.tileType = TileType.Field; 
+            tile.seasonType = currentSeason.seasonType;
+            tile.NewTint();
+        }
+        foreach (TileObject tile in passiveGrid)
+        {
+            tile.tileType = TileType.Borderless;
+            tile.seasonType = currentSeason.seasonType;
+            tile.NewTint();
+        }
     }
     void UpdateTiles()
     {
@@ -276,6 +286,7 @@ public class GameMaster : MonoBehaviour
                         marketCount--;
                         break;
                 }
+                foreach (TileObject tile in activeGrid) { if(tile.tileType == building) { tile.tileType = TileType.Field; break; } }
 
                 notifyTray.AddNotification("A " + building.ToString() + " burned down!");
             }
@@ -339,6 +350,8 @@ public class GameMaster : MonoBehaviour
                 }
                 break;
         }
+
+        if (built) { activeGrid[Random.Range(0,activeGrid.Length)].tileType = tile; UpdateTiles(); }
 
         UpdatePopCap();
 
