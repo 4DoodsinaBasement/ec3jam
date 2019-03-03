@@ -7,7 +7,7 @@ public static class CottageData
     public static string buildingName = "Cottage";
     public static string buildingDescription = "Prevents Exposure";
     // Build Costs
-    public static float buildTime;
+    public static float buildTime = 8.0f;
     public static int grainCost = 0;
     public static int lumberCost = 50;
     public static int sterlingCost = 10;
@@ -27,7 +27,7 @@ public static class FarmData
     public static string buildingName = "Farm";
     public static string buildingDescription = "Produces Grain in Autumn";
     // Build Costs
-    public static float buildTime;
+    public static float buildTime = 12.0f;
     public static int grainCost = 10;
     public static int lumberCost = 10;
     public static int sterlingCost = 0;
@@ -47,7 +47,7 @@ public static class MillData
     public static string buildingName = "Mill";
     public static string buildingDescription = "Produces Wood";
     // Build Costs
-    public static float buildTime;
+    public static float buildTime = 6.0f;
     public static int grainCost = 10;
     public static int lumberCost = 0;
     public static int sterlingCost = 10;
@@ -67,7 +67,7 @@ public static class MarketData
     public static string buildingName = "Market";
     public static string buildingDescription = "Produces Sterling";
     // Build Costs
-    public static float buildTime;
+    public static float buildTime = 9.0f;
     public static int grainCost = 15;
     public static int lumberCost = 50;
     public static int sterlingCost = 20;

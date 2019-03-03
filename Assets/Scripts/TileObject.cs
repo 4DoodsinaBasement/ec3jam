@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class TileObject : MonoBehaviour
 {
-    public TileType tileType;
+    public TileType finishedType;
+    public TileType startType;
     public SeasonType seasonType;
     public SpriteRenderer render;
+
+    public bool underConstruction = false;
+    public float buildProgress = 0;
+    public float buildTarget;
 
     float tintAmount = 0.95f;
 
@@ -18,12 +23,19 @@ public class TileObject : MonoBehaviour
     void Update()
     {
         if (render == null) { render = gameObject.GetComponent<SpriteRenderer>(); }
-        render.sprite = ResourceLoader.GetSpriteSheet(tileType)[(int)seasonType];
-    }
+        render.sprite = ResourceLoader.GetSpriteSheet(startType)[(int)seasonType];
 
-    // public void NewTint()
-    // {
-    //     float x = Random.Range(tintAmount, 1.0f);
-    //     render.color = new Color(x, x, x);
-    // }
+        if (startType != finishedType)
+        {
+            Color temp = render.color;
+            temp.a = 0.25f;
+            render.color = temp;
+        }
+        else
+        {
+            Color temp = render.color;
+            temp.a = 1.0f;
+            render.color = temp;
+        }
+    }
 }
