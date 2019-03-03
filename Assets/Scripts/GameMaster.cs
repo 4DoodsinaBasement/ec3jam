@@ -9,7 +9,9 @@ public enum TileType {Borderless = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 
 
 public class GameMaster : MonoBehaviour
 {
-    public TileObject tile1;
+    // Global Variables
+    #region
+    // Data
     public GameObject activeGridObject;
     public TileObject[] activeGrid;
     public GameObject passiveGridObject;
@@ -70,31 +72,36 @@ public class GameMaster : MonoBehaviour
     // Tick Notification
     public int notify_exposureDeaths = 0;
     public int notify_lumberIncrease = 0;
+    #endregion
 
 
     void Start()
     {
-        LoadTiles();
-        
         currentSeason = seasonData[0];
         notifyTray.AddNotification("Welcome to Ranoke!");
         notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
-
-        // SeasonUpkeep();
+        
+        LoadTiles();
     }
-
     void Update() { }
 
+
+    // Tile Functions
+    #region
     void LoadTiles()
     {
-        // tile1.tileType = TileType.Farm;
-
         activeGrid = activeGridObject.GetComponentsInChildren<TileObject>();
         passiveGrid = passiveGridObject.GetComponentsInChildren<TileObject>();
 
-        for (int i = 0; i < activeGrid.Length; i++) { activeGrid[i].tileType = TileType.Farm; activeGrid[i].seasonType = SeasonType.Winter; }
-        for (int i = 0; i < passiveGrid.Length; i++) { passiveGrid[i].tileType = TileType.Borderless; passiveGrid[i].seasonType = SeasonType.Winter; }
+        foreach (TileObject tile in activeGrid) { tile.tileType = TileType.Field; tile.seasonType = currentSeason.seasonType; }
+        foreach (TileObject tile in passiveGrid) { tile.tileType = TileType.Borderless; tile.seasonType = currentSeason.seasonType; }
     }
+    void UpdateTiles()
+    {
+        foreach (TileObject tile in activeGrid) { tile.seasonType = currentSeason.seasonType; }
+        foreach (TileObject tile in passiveGrid) { tile.seasonType = currentSeason.seasonType; }
+    }
+    #endregion
 
 
     // Game Season Functions
@@ -117,6 +124,7 @@ public class GameMaster : MonoBehaviour
         currentSeason = seasonData[currentSeasonIndex];
         currentTurns++;
         notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
+        UpdateTiles();
     }
     void ZeroReports()
     {
@@ -205,6 +213,7 @@ public class GameMaster : MonoBehaviour
     }
     #endregion
 
+
     // Game Tick Functions
     #region 
     public void GameTick()
@@ -279,6 +288,7 @@ public class GameMaster : MonoBehaviour
         // TODO: Build Encounters
     }
     #endregion
+
 
     // Game Mechanical Functions
     #region 
