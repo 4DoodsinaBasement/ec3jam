@@ -73,11 +73,11 @@ public class Builder : MonoBehaviour
         infoMenu.gameObject.SetActive(false);
     }
 
-    void Update()
+    public void Update()
     {
-        image.sprite = ResourceLoader.GetSpriteSheet(buildingType)[(int)gameMaster.currentSeason.seasonType];
+        if (gameMaster.currentTickCount == 0) {image.sprite = ResourceLoader.GetSpriteSheet(buildingType)[(int)gameMaster.currentSeason.seasonType]; }
+        
     }
-
 
     public void PointerEnter()
     {
