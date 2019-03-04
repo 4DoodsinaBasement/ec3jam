@@ -18089,10 +18089,20 @@ MonoBehaviour:
   starveChance: 0.5
   exposeChance: 0.25
   fireChance: 0.005
-  SeasonalEncounterChance: 0.4
+  SeasonalEncounterChance: 1
   tickEncounterChance: 0.2
   grainEncounterBonus: 0
-  encounterData: []
+  encounterData:
+  - {fileID: 11400000, guid: de4ec3ee034623d43bc3228fbc99025b, type: 2}
+  - {fileID: 11400000, guid: a1ac5c99c6f6de14b9fcb301ef3292c5, type: 2}
+  - {fileID: 11400000, guid: d650568fa8879454a90a3bec89c135de, type: 2}
+  - {fileID: 11400000, guid: bacda39d5c8a69a41a4d9e30f3954c4a, type: 2}
+  - {fileID: 11400000, guid: 64a4e8a3f4e1d254392d969cf68d9604, type: 2}
+  - {fileID: 11400000, guid: f5cb66001944461459bbd6a06f264989, type: 2}
+  - {fileID: 11400000, guid: 3be627ff1f622374d92791aed77a82fa, type: 2}
+  - {fileID: 11400000, guid: e4ac5c460854b944ab45b18d345e8d75, type: 2}
+  - {fileID: 11400000, guid: 50ca44be33338364e9f16eb30e077835, type: 2}
+  - {fileID: 11400000, guid: 6078b21013b028443933415769418e51, type: 2}
   report_populationIncrease: 0
   report_grainIncrease: 0
   report_sterlingIncrease: 0
