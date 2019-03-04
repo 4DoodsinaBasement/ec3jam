@@ -13,6 +13,7 @@ public class GameMaster : MonoBehaviour
     #region
 
     // Data
+    public AudioSource burnSound;
     public TransitionHandler transitionHandler;
     public NotificationManager notifyTray;
     public GameObject activeGridObject;
@@ -535,6 +536,8 @@ public class GameMaster : MonoBehaviour
     }
     void CheckFire()
     {
+        bool somethingBurned = false;
+        
         foreach (TileObject tile in activeGrid)
         {
             if (tile.finishedType == TileType.Cottage || 
@@ -544,13 +547,16 @@ public class GameMaster : MonoBehaviour
             {
                 if (PercentChance(fireChance * currentSeason.FireMod))
                 {
-                    notifyTray.AddSoundNotification("A " + tile.finishedType.ToString() + " burned down!");
+                    notifyTray.AddNotification("A " + tile.finishedType.ToString() + " burned down!");
+                    somethingBurned = true;
 
                     tile.finishedType = TileType.Field;
                     tile.startType = TileType.Field;
                 }
             }
         }
+
+        if (somethingBurned) { burnSound.Play(); }
 
         UpdatePopCap();
     }
