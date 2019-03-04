@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum SeasonType {Spring = 0, Summer = 1, Autumn = 2, Winter = 3};
-public enum TileType {Rocks1 = -2, Rocks2 = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
+public enum TileType {Rocks1 = -3, Rocks2 = -2, Fire = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
 
 
 public class GameMaster : MonoBehaviour
@@ -105,7 +105,7 @@ public class GameMaster : MonoBehaviour
         LoadTiles();
 
         for (int i = 0; i < musicFadeSteps; i++)
-        { turnMusicDown.Add(1.0f - ((1.0f / musicFadeSteps) * i)); }
+        { turnMusicDown.Add(music.maxVol - ((music.maxVol / musicFadeSteps) * i)); }
         turnMusicDown.Add(0.0f);
         music.SetTrack(SeasonType.Spring);
     }
@@ -227,8 +227,8 @@ public class GameMaster : MonoBehaviour
             {
                 case SeasonType.Spring : tile.SetColor(new Color(0.9f, 0.9f, 0.9f, 1.0f)); break;
                 case SeasonType.Summer : tile.SetColor(new Color(0.85f, 0.85f, 0.85f, 1.0f)); break;
-                case SeasonType.Autumn : tile.SetColor(new Color(0.92f, 0.92f, 0.92f, 1.0f)); break;
-                case SeasonType.Winter : tile.SetColor(new Color(0.82f, 0.82f, 0.82f, 1.0f)); break;
+                case SeasonType.Autumn : tile.SetColor(new Color(0.85f, 0.85f, 0.85f, 1.0f)); break;
+                case SeasonType.Winter : tile.SetColor(new Color(0.85f, 0.85f, 0.85f, 1.0f)); break;
             }
         }
     }
@@ -549,9 +549,7 @@ public class GameMaster : MonoBehaviour
                 {
                     notifyTray.AddNotification("A " + tile.finishedType.ToString() + " burned down!");
                     somethingBurned = true;
-
-                    tile.finishedType = TileType.Field;
-                    tile.startType = TileType.Field;
+                    tile.BurnBuilding();
                 }
             }
         }

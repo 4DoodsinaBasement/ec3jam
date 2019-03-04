@@ -6,6 +6,10 @@ TextureImporter:
     21300002: tile - lumberyard1_1
     21300004: tile - lumberyard1_2
     21300006: tile - lumberyard1_3
+    21300008: tile-mill_0
+    21300010: tile-mill_1
+    21300012: tile-mill_2
+    21300014: tile-mill_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -99,11 +103,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile - lumberyard1_0
+      name: tile-mill_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 195
+        y: 192
         width: 128
         height: 64
       alignment: 0
@@ -113,17 +117,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91659d3215a579e46a3829da609a8ca3
+      spriteID: 44239cd7792db0b4e9fb94b67880e741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - lumberyard1_1
+      name: tile-mill_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 130
+        y: 128
         width: 128
         height: 64
       alignment: 0
@@ -133,17 +137,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0818a1ca452e71e4bbc40dea82571f4e
+      spriteID: 3819b27c1fc31c5489f2d41eb318d26a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - lumberyard1_2
+      name: tile-mill_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 65
+        y: 64
         width: 128
         height: 64
       alignment: 0
@@ -153,19 +157,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c6574b040b01074fba3f6118bf1bce5
+      spriteID: 2db04534fd5f2d940be378af9ef51d03
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - lumberyard1_3
+      name: tile-mill_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +177,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e19ffc7b9add9f46ad325df39e30c98
+      spriteID: 41370d097de536e4a81bff72177b60aa
       vertices: []
       indices: 
       edges: []

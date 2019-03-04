@@ -13,6 +13,11 @@ public class TileObject : MonoBehaviour
     public float buildProgress = 0;
     public float buildTarget;
 
+    public bool isBurning = false;
+    int burnTime = 20;
+    int burnCounter = 0;
+
+
     float tintAmount = 0.95f;
 
     void Awake()
@@ -22,6 +27,20 @@ public class TileObject : MonoBehaviour
 
     void Update()
     {
+        if (isBurning)
+        {
+            burnCounter++;
+
+            if (burnCounter >= burnTime)
+            {
+                isBurning = false;
+                burnCounter = 0;
+
+                finishedType = TileType.Field;
+                startType = TileType.Field;
+            }
+        }
+        
         if (render == null) { render = gameObject.GetComponent<SpriteRenderer>(); }
         render.sprite = ResourceLoader.GetSpriteSheet(startType)[(int)seasonType];
 
@@ -33,6 +52,13 @@ public class TileObject : MonoBehaviour
         {
             SetAlpha(1.0f);
         }
+    }
+
+    public void BurnBuilding()
+    {
+        isBurning = true;
+        finishedType = TileType.Fire;
+        startType = TileType.Fire;
     }
 
     public void SetColor(Color newColor)

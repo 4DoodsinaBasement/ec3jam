@@ -6,6 +6,10 @@ TextureImporter:
     21300002: tile - blankrocky1_1
     21300004: tile - blankrocky1_2
     21300006: tile - blankrocky1_3
+    21300008: tile-rocks1_0
+    21300010: tile-rocks1_1
+    21300012: tile-rocks1_2
+    21300014: tile-rocks1_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -99,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile - blankrocky1_0
+      name: tile-rocks1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 195
+        y: 192
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +117,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d98221bb7884874a8f86183c01d2ed2
+      spriteID: 504f44a3f5eaae54d95a4ac7d1a36bd5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - blankrocky1_1
+      name: tile-rocks1_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 130
+        y: 128
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 135df8bdb65d3524fb6160cb10c32bf0
+      spriteID: 0e5d0223b2004264e8943fdc5127e69b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - blankrocky1_2
+      name: tile-rocks1_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 65
+        y: 64
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +157,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201531d35c86084419e7734f731fd7ce
+      spriteID: 051c33431f34f9f42b674d844552d8bb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile - blankrocky1_3
+      name: tile-rocks1_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +177,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8f2e1bc410b1ac4d871638131e34c3b
+      spriteID: 96a421036e07986488ca32828feb6018
       vertices: []
       indices: 
       edges: []

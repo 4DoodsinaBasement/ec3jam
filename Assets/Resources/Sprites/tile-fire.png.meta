@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: bb9c7b7c928122f4fa0f40bbedde7735
+guid: e2d7b29f85c5a684fad57fb41f0b5a11
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tile-cottage_0
-    21300002: tile-cottage_1
-    21300004: tile-cottage_2
-    21300006: tile-cottage_3
+    21300000: tile-fire_0
+    21300002: tile-fire_1
+    21300004: tile-fire_2
+    21300006: tile-fire_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -66,8 +66,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,19 +77,19 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile-cottage_0
+      name: tile-fire_0
       rect:
         serializedVersion: 2
         x: 0
         y: 192
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +113,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4024099d6212ff64cbd694ca0258808e
+      spriteID: 201a3c49ede055140a23c2f2a1570dde
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-cottage_1
+      name: tile-fire_1
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +133,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea9492637fbd8324187ca38fb3e887bf
+      spriteID: dbadf2503e0b60b49904877c3e9f8ca6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-cottage_2
+      name: tile-fire_2
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +153,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2d36d8bc788a56468c3d99c1638ef98
+      spriteID: 9abc81885627d9b4c80eb7316898161e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-cottage_3
+      name: tile-fire_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 128
-        height: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b3d70227326bbd429b2bd47e91bbfcb
+      spriteID: b02b826e81f234442a5e3855e6cba62a
       vertices: []
       indices: 
       edges: []
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 453229163b090024c82f0d53cf72937e
+    spriteID: c79fc1c6b93946246abe12c1a78f4f26
     vertices: []
     indices: 
     edges: []
