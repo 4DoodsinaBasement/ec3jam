@@ -161,8 +161,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &11790109
 SpriteRenderer:
@@ -340,8 +340,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &26919357
 SpriteRenderer:
@@ -484,8 +484,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &40342866
 SpriteRenderer:
@@ -584,8 +584,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &41219569
 SpriteRenderer:
@@ -684,8 +684,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &46153550
 SpriteRenderer:
@@ -784,8 +784,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &52953573
 SpriteRenderer:
@@ -884,8 +884,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &73351665
 SpriteRenderer:
@@ -984,8 +984,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &75276130
 SpriteRenderer:
@@ -1084,8 +1084,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &77530398
 SpriteRenderer:
@@ -1184,8 +1184,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &77589901
 SpriteRenderer:
@@ -1284,8 +1284,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &77937472
 SpriteRenderer:
@@ -1384,8 +1384,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &84377878
 SpriteRenderer:
@@ -1484,8 +1484,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &88324819
 SpriteRenderer:
@@ -1584,8 +1584,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &88823729
 SpriteRenderer:
@@ -1684,8 +1684,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &95238698
 SpriteRenderer:
@@ -1784,8 +1784,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &105024406
 SpriteRenderer:
@@ -1884,8 +1884,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &105864655
 SpriteRenderer:
@@ -1984,8 +1984,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &107399733
 SpriteRenderer:
@@ -2084,8 +2084,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &112108021
 SpriteRenderer:
@@ -2184,8 +2184,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &114063664
 SpriteRenderer:
@@ -2284,8 +2284,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &145540816
 SpriteRenderer:
@@ -2384,8 +2384,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &145559729
 SpriteRenderer:
@@ -2484,8 +2484,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &147293876
 SpriteRenderer:
@@ -2685,8 +2685,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &151913633
 SpriteRenderer:
@@ -2785,8 +2785,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &158355602
 SpriteRenderer:
@@ -2885,8 +2885,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &158733738
 SpriteRenderer:
@@ -2985,8 +2985,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &162061634
 SpriteRenderer:
@@ -3085,8 +3085,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &174547686
 SpriteRenderer:
@@ -3185,8 +3185,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &175573778
 SpriteRenderer:
@@ -3285,8 +3285,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &185490296
 SpriteRenderer:
@@ -3385,8 +3385,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &192995743
 SpriteRenderer:
@@ -3485,8 +3485,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &197205303
 SpriteRenderer:
@@ -3585,8 +3585,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &201788720
 SpriteRenderer:
@@ -3685,8 +3685,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &218733389
 SpriteRenderer:
@@ -3785,8 +3785,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &218846692
 SpriteRenderer:
@@ -3885,8 +3885,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &231226741
 SpriteRenderer:
@@ -3985,8 +3985,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &234719031
 SpriteRenderer:
@@ -4085,8 +4085,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &236029414
 SpriteRenderer:
@@ -4492,8 +4492,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &260771785
 SpriteRenderer:
@@ -4592,8 +4592,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &260888063
 SpriteRenderer:
@@ -4692,8 +4692,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &274806671
 SpriteRenderer:
@@ -4792,8 +4792,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &277162593
 SpriteRenderer:
@@ -4892,8 +4892,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &291578809
 SpriteRenderer:
@@ -4992,8 +4992,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &308462401
 SpriteRenderer:
@@ -5092,8 +5092,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &316133062
 SpriteRenderer:
@@ -5192,8 +5192,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &327276183
 SpriteRenderer:
@@ -5292,8 +5292,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &344290044
 SpriteRenderer:
@@ -5392,8 +5392,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &348336840
 SpriteRenderer:
@@ -5492,8 +5492,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &351254635
 SpriteRenderer:
@@ -5671,8 +5671,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &377479487
 SpriteRenderer:
@@ -5771,8 +5771,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &385511000
 SpriteRenderer:
@@ -5871,8 +5871,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &388555829
 SpriteRenderer:
@@ -5971,8 +5971,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &390281299
 SpriteRenderer:
@@ -6071,8 +6071,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &400358094
 SpriteRenderer:
@@ -6171,8 +6171,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &412076176
 SpriteRenderer:
@@ -6271,8 +6271,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &412198725
 SpriteRenderer:
@@ -6371,8 +6371,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &412431800
 SpriteRenderer:
@@ -6471,8 +6471,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &413002439
 SpriteRenderer:
@@ -6571,8 +6571,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &432762346
 SpriteRenderer:
@@ -6671,8 +6671,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &437633352
 SpriteRenderer:
@@ -6771,8 +6771,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &439693789
 SpriteRenderer:
@@ -6871,8 +6871,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &451053220
 SpriteRenderer:
@@ -6971,8 +6971,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &467619456
 SpriteRenderer:
@@ -7229,8 +7229,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &489223989
 SpriteRenderer:
@@ -7329,8 +7329,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &490569923
 SpriteRenderer:
@@ -7429,8 +7429,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &492666617
 SpriteRenderer:
@@ -7529,8 +7529,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &496560638
 SpriteRenderer:
@@ -7629,8 +7629,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &506042666
 SpriteRenderer:
@@ -7729,8 +7729,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &509646295
 SpriteRenderer:
@@ -7829,8 +7829,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &511496620
 SpriteRenderer:
@@ -7929,8 +7929,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &521366219
 SpriteRenderer:
@@ -8029,8 +8029,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &523597390
 SpriteRenderer:
@@ -8129,8 +8129,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &524338206
 SpriteRenderer:
@@ -8229,8 +8229,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &536321321
 SpriteRenderer:
@@ -8471,8 +8471,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &551510427
 SpriteRenderer:
@@ -8571,8 +8571,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &553505139
 SpriteRenderer:
@@ -8671,8 +8671,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &589267402
 SpriteRenderer:
@@ -8771,8 +8771,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &591459089
 SpriteRenderer:
@@ -8871,8 +8871,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &591595786
 SpriteRenderer:
@@ -8971,8 +8971,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &612153507
 SpriteRenderer:
@@ -9071,8 +9071,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &639103250
 SpriteRenderer:
@@ -9171,8 +9171,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &647342644
 SpriteRenderer:
@@ -9271,8 +9271,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &660781935
 SpriteRenderer:
@@ -9371,8 +9371,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &675145617
 SpriteRenderer:
@@ -9471,8 +9471,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &693986696
 SpriteRenderer:
@@ -9571,8 +9571,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &705706817
 SpriteRenderer:
@@ -9671,8 +9671,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &709964956
 SpriteRenderer:
@@ -9771,8 +9771,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &717412514
 SpriteRenderer:
@@ -9871,8 +9871,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &723615439
 SpriteRenderer:
@@ -9971,8 +9971,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &724101975
 SpriteRenderer:
@@ -10071,8 +10071,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &731968965
 SpriteRenderer:
@@ -10250,8 +10250,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &747835972
 SpriteRenderer:
@@ -10350,8 +10350,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &755230022
 SpriteRenderer:
@@ -10450,8 +10450,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &759519244
 SpriteRenderer:
@@ -10550,8 +10550,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &759787484
 SpriteRenderer:
@@ -10650,8 +10650,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &769838944
 SpriteRenderer:
@@ -10750,8 +10750,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &770875431
 SpriteRenderer:
@@ -10850,8 +10850,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &772197651
 SpriteRenderer:
@@ -10950,8 +10950,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &774042150
 SpriteRenderer:
@@ -11050,8 +11050,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &786916742
 SpriteRenderer:
@@ -11150,8 +11150,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &801493323
 SpriteRenderer:
@@ -11250,8 +11250,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &805311831
 SpriteRenderer:
@@ -11350,8 +11350,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &810793772
 SpriteRenderer:
@@ -11450,8 +11450,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &817037969
 SpriteRenderer:
@@ -11693,8 +11693,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &822916915
 SpriteRenderer:
@@ -11793,8 +11793,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &824226882
 SpriteRenderer:
@@ -11893,8 +11893,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &824776294
 SpriteRenderer:
@@ -11993,8 +11993,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &826612989
 SpriteRenderer:
@@ -12093,8 +12093,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &827445870
 SpriteRenderer:
@@ -12193,8 +12193,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &853339574
 SpriteRenderer:
@@ -12293,8 +12293,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &861313819
 SpriteRenderer:
@@ -12393,8 +12393,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &871827355
 SpriteRenderer:
@@ -12493,8 +12493,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &873640414
 SpriteRenderer:
@@ -12593,8 +12593,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &892266249
 SpriteRenderer:
@@ -12693,8 +12693,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &895639282
 SpriteRenderer:
@@ -12793,8 +12793,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &902424932
 SpriteRenderer:
@@ -12893,8 +12893,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &919922986
 SpriteRenderer:
@@ -12993,8 +12993,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &924657861
 SpriteRenderer:
@@ -13093,8 +13093,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &941328388
 SpriteRenderer:
@@ -13193,8 +13193,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &952530883
 SpriteRenderer:
@@ -13293,8 +13293,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &958393080
 SpriteRenderer:
@@ -13393,8 +13393,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &961551636
 SpriteRenderer:
@@ -13493,8 +13493,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &963443668
 SpriteRenderer:
@@ -13593,8 +13593,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &969044266
 SpriteRenderer:
@@ -13693,8 +13693,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &971262915
 SpriteRenderer:
@@ -13793,8 +13793,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &981589404
 SpriteRenderer:
@@ -13893,8 +13893,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1003169727
 SpriteRenderer:
@@ -13993,8 +13993,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1019564770
 SpriteRenderer:
@@ -14093,8 +14093,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1040649874
 SpriteRenderer:
@@ -14193,8 +14193,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1044843295
 SpriteRenderer:
@@ -14293,8 +14293,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1049103200
 SpriteRenderer:
@@ -14393,8 +14393,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1055493938
 SpriteRenderer:
@@ -14493,8 +14493,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1071180084
 SpriteRenderer:
@@ -14593,8 +14593,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1071945873
 SpriteRenderer:
@@ -14693,8 +14693,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1075636393
 SpriteRenderer:
@@ -14793,8 +14793,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1076438682
 SpriteRenderer:
@@ -14893,8 +14893,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1078344509
 SpriteRenderer:
@@ -14993,8 +14993,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1078911280
 SpriteRenderer:
@@ -15093,8 +15093,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1091345264
 SpriteRenderer:
@@ -15272,8 +15272,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1106592911
 SpriteRenderer:
@@ -15372,8 +15372,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1109654815
 SpriteRenderer:
@@ -15472,8 +15472,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1117087035
 SpriteRenderer:
@@ -15572,8 +15572,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1141949915
 SpriteRenderer:
@@ -15672,8 +15672,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1148143898
 SpriteRenderer:
@@ -15772,8 +15772,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1150949916
 SpriteRenderer:
@@ -15872,8 +15872,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1163223684
 SpriteRenderer:
@@ -15972,8 +15972,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1163814843
 SpriteRenderer:
@@ -16078,8 +16078,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1168484735
 SpriteRenderer:
@@ -16178,8 +16178,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1174874838
 SpriteRenderer:
@@ -16278,8 +16278,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1182794193
 SpriteRenderer:
@@ -16378,8 +16378,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1193170999
 SpriteRenderer:
@@ -16552,8 +16552,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1216892118
 SpriteRenderer:
@@ -16673,27 +16673,29 @@ PrefabInstance:
     - target: {fileID: 794657617985030896, guid: 8fd79e0ec3cd81c4fb84db6d85bfd1e7,
         type: 3}
       propertyPath: m_text
-      value: Tutorial Text
+      value: You are a settler in Roanoke. Build buildings from the upper right corner,
+        watch you resources in the upper left. Don't let your people suffer from exposure!
+        Build cottages for them. Let's see if you can survive 3 years.
       objectReference: {fileID: 0}
     - target: {fileID: 794657617985030896, guid: 8fd79e0ec3cd81c4fb84db6d85bfd1e7,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 13
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 794657617985030896, guid: 8fd79e0ec3cd81c4fb84db6d85bfd1e7,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 1
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 794657617985030896, guid: 8fd79e0ec3cd81c4fb84db6d85bfd1e7,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 2
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 794657617985030896, guid: 8fd79e0ec3cd81c4fb84db6d85bfd1e7,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 794657617985030896, guid: 8fd79e0ec3cd81c4fb84db6d85bfd1e7,
         type: 3}
@@ -16709,6 +16711,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 794657617985030896, guid: 8fd79e0ec3cd81c4fb84db6d85bfd1e7,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fd79e0ec3cd81c4fb84db6d85bfd1e7, type: 3}
@@ -16767,8 +16774,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1231276335
 SpriteRenderer:
@@ -16867,8 +16874,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1232229983
 SpriteRenderer:
@@ -16967,8 +16974,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1245133013
 SpriteRenderer:
@@ -17067,8 +17074,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1258191403
 SpriteRenderer:
@@ -17167,8 +17174,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1271909146
 SpriteRenderer:
@@ -17267,8 +17274,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1302741075
 SpriteRenderer:
@@ -17367,8 +17374,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1306081750
 SpriteRenderer:
@@ -17467,8 +17474,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1306930286
 SpriteRenderer:
@@ -17567,8 +17574,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1315941198
 SpriteRenderer:
@@ -17667,8 +17674,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1340552682
 SpriteRenderer:
@@ -17767,8 +17774,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1350348910
 SpriteRenderer:
@@ -17867,8 +17874,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1352757801
 SpriteRenderer:
@@ -17967,8 +17974,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1354208300
 SpriteRenderer:
@@ -18067,8 +18074,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1359087163
 SpriteRenderer:
@@ -18167,8 +18174,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1366883853
 SpriteRenderer:
@@ -18267,8 +18274,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1373169815
 SpriteRenderer:
@@ -18367,8 +18374,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1404556659
 SpriteRenderer:
@@ -18467,8 +18474,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1408727051
 SpriteRenderer:
@@ -18567,8 +18574,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1426655539
 SpriteRenderer:
@@ -18667,8 +18674,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1428627436
 SpriteRenderer:
@@ -18767,8 +18774,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1430427318
 SpriteRenderer:
@@ -18867,8 +18874,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1430637913
 SpriteRenderer:
@@ -18967,8 +18974,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1434931662
 SpriteRenderer:
@@ -19067,8 +19074,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1440179957
 SpriteRenderer:
@@ -19167,8 +19174,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1464586202
 SpriteRenderer:
@@ -19267,8 +19274,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1481457666
 SpriteRenderer:
@@ -19433,8 +19440,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1499771836
 SpriteRenderer:
@@ -19533,8 +19540,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1504163636
 SpriteRenderer:
@@ -19633,8 +19640,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1512832292
 SpriteRenderer:
@@ -19733,8 +19740,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1513138217
 SpriteRenderer:
@@ -19833,8 +19840,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1521210153
 SpriteRenderer:
@@ -19933,8 +19940,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1531687641
 SpriteRenderer:
@@ -20033,8 +20040,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1533204106
 SpriteRenderer:
@@ -20133,8 +20140,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1569812590
 SpriteRenderer:
@@ -20233,8 +20240,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1581525815
 SpriteRenderer:
@@ -20333,8 +20340,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1584041871
 SpriteRenderer:
@@ -20433,8 +20440,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1587138886
 SpriteRenderer:
@@ -20533,8 +20540,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1590028098
 SpriteRenderer:
@@ -20633,8 +20640,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1599123942
 SpriteRenderer:
@@ -20733,8 +20740,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1616200659
 SpriteRenderer:
@@ -20833,8 +20840,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1617782612
 SpriteRenderer:
@@ -20933,8 +20940,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1621507367
 SpriteRenderer:
@@ -21033,8 +21040,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1629339921
 SpriteRenderer:
@@ -21133,8 +21140,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1631869098
 SpriteRenderer:
@@ -21233,8 +21240,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1632020790
 SpriteRenderer:
@@ -21333,8 +21340,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1640993448
 SpriteRenderer:
@@ -21433,8 +21440,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1641967952
 SpriteRenderer:
@@ -21533,8 +21540,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1643296769
 SpriteRenderer:
@@ -21633,8 +21640,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1645219335
 SpriteRenderer:
@@ -21733,8 +21740,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1651043743
 SpriteRenderer:
@@ -21833,8 +21840,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1653496761
 SpriteRenderer:
@@ -21933,8 +21940,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1653696791
 SpriteRenderer:
@@ -22033,8 +22040,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1656150740
 SpriteRenderer:
@@ -22133,8 +22140,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1656670833
 SpriteRenderer:
@@ -22233,8 +22240,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1661382227
 SpriteRenderer:
@@ -22333,8 +22340,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1668023055
 SpriteRenderer:
@@ -22433,8 +22440,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1681249995
 SpriteRenderer:
@@ -22533,8 +22540,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1682696297
 SpriteRenderer:
@@ -22633,8 +22640,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1687209320
 SpriteRenderer:
@@ -22894,8 +22901,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1700405382
 SpriteRenderer:
@@ -23073,8 +23080,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1728312418
 SpriteRenderer:
@@ -23173,8 +23180,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1734722574
 SpriteRenderer:
@@ -23273,8 +23280,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1734738011
 SpriteRenderer:
@@ -23373,8 +23380,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1739173146
 SpriteRenderer:
@@ -23473,8 +23480,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1739304377
 SpriteRenderer:
@@ -23573,8 +23580,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1759084231
 SpriteRenderer:
@@ -23673,8 +23680,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1762098431
 SpriteRenderer:
@@ -23773,8 +23780,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1764995272
 SpriteRenderer:
@@ -23873,8 +23880,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1765196998
 SpriteRenderer:
@@ -23973,8 +23980,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1765461598
 SpriteRenderer:
@@ -24073,8 +24080,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1771078134
 SpriteRenderer:
@@ -24173,8 +24180,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1775412857
 SpriteRenderer:
@@ -24273,8 +24280,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1780576834
 SpriteRenderer:
@@ -24373,8 +24380,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1781037939
 SpriteRenderer:
@@ -24473,8 +24480,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1781626436
 SpriteRenderer:
@@ -24573,8 +24580,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1824725985
 SpriteRenderer:
@@ -24673,8 +24680,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1833967008
 SpriteRenderer:
@@ -24974,8 +24981,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1846469647
 SpriteRenderer:
@@ -25074,8 +25081,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1850583866
 SpriteRenderer:
@@ -25174,8 +25181,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1858363497
 SpriteRenderer:
@@ -25274,8 +25281,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1860979777
 SpriteRenderer:
@@ -25374,8 +25381,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1863126406
 SpriteRenderer:
@@ -25474,8 +25481,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1863379743
 SpriteRenderer:
@@ -25574,8 +25581,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1864107299
 SpriteRenderer:
@@ -25674,8 +25681,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1874373377
 SpriteRenderer:
@@ -25774,8 +25781,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1888205241
 SpriteRenderer:
@@ -25874,8 +25881,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1928300786
 SpriteRenderer:
@@ -25974,8 +25981,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1947539943
 SpriteRenderer:
@@ -26074,8 +26081,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1950762683
 SpriteRenderer:
@@ -26174,8 +26181,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1962214279
 SpriteRenderer:
@@ -26274,8 +26281,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1962935003
 SpriteRenderer:
@@ -26374,8 +26381,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1970585466
 SpriteRenderer:
@@ -26474,8 +26481,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1973311761
 SpriteRenderer:
@@ -26574,8 +26581,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1985511781
 SpriteRenderer:
@@ -26674,8 +26681,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1995495067
 SpriteRenderer:
@@ -26774,8 +26781,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &1997612706
 SpriteRenderer:
@@ -26874,8 +26881,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2004381854
 SpriteRenderer:
@@ -26974,8 +26981,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2014046968
 SpriteRenderer:
@@ -27074,8 +27081,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2018304597
 SpriteRenderer:
@@ -27174,8 +27181,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2037023560
 SpriteRenderer:
@@ -27274,8 +27281,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2063037192
 SpriteRenderer:
@@ -27374,8 +27381,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2084571613
 SpriteRenderer:
@@ -27474,8 +27481,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2085160902
 SpriteRenderer:
@@ -27574,8 +27581,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2085900522
 SpriteRenderer:
@@ -27674,8 +27681,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2102314411
 SpriteRenderer:
@@ -27774,8 +27781,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2112152434
 SpriteRenderer:
@@ -27957,8 +27964,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2125262616
 SpriteRenderer:
@@ -28057,8 +28064,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2136067724
 SpriteRenderer:
@@ -28157,8 +28164,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2136340572
 SpriteRenderer:
@@ -28257,8 +28264,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2141784792
 SpriteRenderer:
@@ -28357,8 +28364,8 @@ MonoBehaviour:
   seasonType: 0
   render: {fileID: 0}
   underConstruction: 0
-  buildProgress: 0
-  buildTarget: 0
+  buildTime: 0
+  buildCounter: 0
   isBurning: 0
 --- !u!212 &2145261486
 SpriteRenderer:
