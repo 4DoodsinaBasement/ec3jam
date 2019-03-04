@@ -21,8 +21,6 @@ public class GameMaster : MonoBehaviour
     public TileObject[] passiveGrid;
     public SeasonData[] seasonData;
 
-<<<<<<< HEAD
-=======
     // Music Settings
     public MusicManager music;
     public List<float> turnMusicDown = new List<float>();
@@ -30,7 +28,6 @@ public class GameMaster : MonoBehaviour
     int musicCounter = 0;
     public bool fadeOutMusic = false;
     
->>>>>>> 642d16d240e942ebfea39e8027790c9978affcce
     // Game Settings
     bool gameOver = false;
     const int ESTABLISH_YEAR = 1587;
@@ -101,14 +98,10 @@ public class GameMaster : MonoBehaviour
     void Start()
     {
         currentSeason = seasonData[0];
-<<<<<<< HEAD
         notifyTray.AddNotification("Welcome to Roanoke!");
         notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
         fireChanceOriginal = fireChance;
 
-=======
-        
->>>>>>> 642d16d240e942ebfea39e8027790c9978affcce
         LoadTiles();
 
         for (int i = 0; i < musicFadeSteps; i++)
@@ -160,12 +153,8 @@ public class GameMaster : MonoBehaviour
             }
 
 
-<<<<<<< HEAD
             if (currentTickCount == 9) {
                 SeasonUpkeep();
-=======
-            if(currentTickCount == 9) {
->>>>>>> 642d16d240e942ebfea39e8027790c9978affcce
                 transitionHandler.fadeOut = false;
                 transitionHandler.fadeIn = true;
                 fadeOutMusic = true;
