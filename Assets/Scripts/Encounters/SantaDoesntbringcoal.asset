@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2835f33d80ac06b4c9d002571b08fce7, type: 3}
+  m_Name: SantaDoesntbringcoal
+  m_EditorClassIdentifier: 
+  encounterType: 0
+  AvailableSeasons: 03000000
+  AvailableYears: 010000000200000003000000
+  appearanceWeight: 5
+  OutputText: 'Santa brought {0} lumber '
+  activateEffect1: 1
+  typeEffect1: 2
+  equationEffect1: 0
+  signAddEffect1: 1
+  value1Effect1: 70
+  value2Effect1: 71
+  activateEffect2: 0
+  typeEffect2: 0
+  equationEffect2: 0
+  signAddEffect2: 0
+  value1Effect2: 0
+  value2Effect2: 0
+  activateEffect3: 0
+  typeEffect3: 0
+  equationEffect3: 0
+  signAddEffect3: 0
+  value1Effect3: 0
+  value2Effect3: 0

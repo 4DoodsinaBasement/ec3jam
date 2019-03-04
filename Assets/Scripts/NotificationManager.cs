@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class NotificationManager : MonoBehaviour
 {
-    public Text tray;
+    public TextMeshProUGUI tray;
     Queue<string> notifications = new Queue<string>();
-    public int maxDisplayedNotifications = 20;
+    public int maxDisplayedNotifications = 17;
 
     public void AddNotification(string message)
     {

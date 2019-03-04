@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum SeasonType {Spring = 0, Summer = 1, Autumn = 2, Winter = 3};
-public enum TileType {Borderless = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
+public enum TileType {Rocks1 = -2, Rocks2 = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
 
 
 public class GameMaster : MonoBehaviour
@@ -53,16 +53,21 @@ public class GameMaster : MonoBehaviour
 
     // Base Multipliers
     public float populationIncreasePercent;
-    float buildRate = 1.0f;
-    float starveChance = 0.5f;
-    float exposeChance = 0.25f;
-    float fireChance = 0.001f;
+    public float buildRate = 1.0f;
+    public float starveChance = 0.5f;
+    public float exposeChance = 0.25f;
+    public float fireChance = 0.005f;
+    float fireChanceOriginal;
 
     // Encounter Bonuses
+    public float SeasonalEncounterChance = 0.4f;
+    public float tickEncounterChance = 0.2f;
     int populationEncounterBonus = 0;
-    int grainEncounterBonus = 0;
+    public int grainEncounterBonus = 0;
     int lumberEncounterBonus = 0;
     int sterlingEncounterBonus = 0;
+    string encounterText;
+    public EncounterData[] encounterData;
 
     // Season Report
     public int report_populationIncrease = 0;
@@ -87,6 +92,7 @@ public class GameMaster : MonoBehaviour
         currentSeason = seasonData[0];
         notifyTray.AddNotification("Welcome to Roanoke!");
         notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
+        fireChanceOriginal = fireChance;
 
         LoadTiles();
     }
@@ -111,6 +117,7 @@ public class GameMaster : MonoBehaviour
                         case TileType.Mill: millCount++; break;
                         case TileType.Market: marketCount++; break;
                     }
+                    UpdatePopCap();
                 }
             }
         }
@@ -161,8 +168,8 @@ public class GameMaster : MonoBehaviour
         }
         foreach (TileObject tile in passiveGrid)
         {
-            tile.startType = TileType.Borderless;
-            tile.finishedType = TileType.Borderless;
+            tile.startType = TileType.Field;
+            tile.finishedType = TileType.Field;
             tile.seasonType = currentSeason.seasonType;
         }
     }
@@ -179,12 +186,12 @@ public class GameMaster : MonoBehaviour
     {
         NextSeason();
         ZeroReports();
+        CheckSeasonEncounter();
         PopulationIncrease();
         CollectGrain();
         CollectSterling();
         UpkeepCost();
         PopulationEat();
-        CheckSeasonEncounter();
         CheckGameOver();
         UpdateSeasonalUi();
 
@@ -201,6 +208,7 @@ public class GameMaster : MonoBehaviour
     }
     void ZeroReports()
     {
+        fireChance = fireChanceOriginal;
         report_populationIncrease = 0;
         report_grainIncrease = 0;
         report_sterlingIncrease = 0;
@@ -282,8 +290,136 @@ public class GameMaster : MonoBehaviour
     }
     void CheckSeasonEncounter()
     {
-        // TODO: Build Encounters
+        if (PercentChance(SeasonalEncounterChance))
+        {
+            EncounterData currentEncounter = EncounterFinder(EncounterType.Seasonal);
+            if(!(currentEncounter is null)){ ExecuteEncounter(currentEncounter);}
+            
+        }
     }
+
+    void ExecuteEncounter(EncounterData encoData)
+    {
+        int value1 = 0;
+        int value2 = 0; 
+        int value3 = 0;
+        int sign;
+
+        if (encoData.activateEffect1)
+        {
+            sign = (encoData.signAddEffect1) ? 1 : -1;
+
+            switch (encoData.equationEffect1)
+            {
+                case EffectEquation.percentage:
+                    switch (encoData.typeEffect1)
+                    { 
+
+                        case EffectType.FarmScaler:
+                            grainEncounterBonus *= sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100);
+                            break;
+                        case EffectType.FireChance:
+                            fireChance *= sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100);
+                            break;
+                        case EffectType.Sterling:
+                            value1 = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100)) * sterling;
+                            sterling += value1;
+                            break;
+                        case EffectType.Lumber:
+                            value1 = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100)) * lumber;
+                            lumber += value1;
+                            break;
+                        case EffectType.Grain:
+                            value1 = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100)) * grain;
+                            grain += value1;
+                            break;
+                        case EffectType.Population:
+                            value1 = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100)) * population;
+                            population += value1; 
+                            break;
+                    }
+                    break;
+                case EffectEquation.standard:
+
+                    Debug.Log(encoData.value1Effect1 + " " + encoData.value2Effect1);
+
+
+                    switch (encoData.typeEffect1)
+                    {
+                           case EffectType.FarmScaler:
+                               
+                               value1 = (Random.Range(encoData.value1Effect1, encoData.value2Effect1)) ;
+                               grainEncounterBonus += (sign * value1);
+                               break;
+                           case EffectType.FireChance:
+                               fireChance += sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) );
+                               break;
+                           case EffectType.Sterling:
+                               value1 = sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1));
+                               sterlingEncounterBonus += value1;
+                               break;
+                           case EffectType.Lumber:
+                                value1 = sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) );
+                                lumber += value1;
+                               break;
+                           case EffectType.Grain:
+                                value1 = sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1));
+                                grain += value1;
+                               break;
+                           case EffectType.Population:
+                                value1 = sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1));
+                                population += value1;
+                            break;
+                    }                   
+                    break;
+
+            }
+
+
+
+
+        }
+
+
+
+        encounterText = string.Format(encoData.OutputText, Mathf.Abs(value1), Mathf.Abs(value2), Mathf.Abs(value3));
+
+
+
+    }
+
+
+    EncounterData EncounterFinder(EncounterType enType)
+    {
+        List<EncounterData> encounterIndex = new List<EncounterData>();
+
+        foreach (EncounterData encount in encounterData)
+        {
+            if (encount.encounterType == enType)
+            {
+                foreach (Year years in encount.AvailableYears)
+                {
+                    if ((int)years == (1+ (currentTurns / 4)))
+                    {
+                        foreach (SeasonType seasons in encount.AvailableSeasons)
+                        {
+                            if (seasons == currentSeason.seasonType)
+                            {
+                                encounterIndex.Add(encount);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        if (encounterIndex.Count > 0)
+        {
+            return encounterIndex[Random.Range(0,encounterIndex.Count)];
+        }
+        return null;
+    }
+
 
     void UpdateSeasonalUi()
     {
@@ -295,12 +431,13 @@ public class GameMaster : MonoBehaviour
         //reportMan.AddNotification("Current Sheltered Poputation: " + shelteredPop);
         reportMan.AddNotification("Births: " + report_populationIncrease);
         if (currentSeason.seasonType == SeasonType.Autumn) { reportMan.AddNotification("Harvested: " + report_grainIncrease + " Grain"); }
-        reportMan.AddNotification("Seasonal Sterling Increase: " + report_sterlingIncrease);
+        reportMan.AddNotification("Sterling Increase: " + report_sterlingIncrease);
         reportMan.AddNotification("Seasonal Maintenance:    Grain: " + report_upkeepCost_grain+ "   Lumber: " + report_upkeepCost_lumber +"   Sterling: " + report_upkeepCost_sterling);
         reportMan.AddNotification("Grain Eaten: " + report_grainSpentOnPop);
         reportMan.AddNotification(report_starvationDeaths+ " died of starvation");
-        reportMan.SeasonUpdate(currentSeason.name, "encounter");
-        
+        reportMan.SeasonUpdate(currentSeason.name, encounterText);
+
+        encounterText = "";
     }
     #endregion
 
@@ -337,7 +474,10 @@ public class GameMaster : MonoBehaviour
     {
         notify_lumberIncrease += (int)(millCount * MillData.lumberIncrease * currentSeason.LumberMod) + lumberEncounterBonus;
         lumberEncounterBonus = 0;
-        if (notify_lumberIncrease > 0) { notifyTray.AddNotification("You gained " + notify_lumberIncrease + " lumber!"); }
+        if (notify_lumberIncrease > 0)
+        {
+            //notifyTray.AddNotification("You gained " + notify_lumberIncrease + " lumber!");
+        }
         lumber += notify_lumberIncrease;
     }
     void CheckFire()
