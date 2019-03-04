@@ -6,6 +6,8 @@ public static class ResourceLoader
 {
     public static Sprite[] spriteSheet_rocks1 = new Sprite[4];
     public static Sprite[] spriteSheet_rocks2 = new Sprite[4];
+    public static Sprite[] spriteSheet_rocks3 = new Sprite[4];
+    public static Sprite[] spriteSheet_rocks4 = new Sprite[4];
     public static Sprite[] spriteSheet_fire = new Sprite[4];
     public static Sprite[] spriteSheet_field =  new Sprite[4];
     public static Sprite[] spriteSheet_cottage =  new Sprite[4];
@@ -19,6 +21,8 @@ public static class ResourceLoader
     {
         spriteSheet_rocks1 = Resources.LoadAll<Sprite>("Sprites/tile-rocks1");
         spriteSheet_rocks2 = Resources.LoadAll<Sprite>("Sprites/tile-rocks2");
+        spriteSheet_rocks3 = Resources.LoadAll<Sprite>("Sprites/tile-rocks3");
+        spriteSheet_rocks4 = Resources.LoadAll<Sprite>("Sprites/tile-rocks4");
         spriteSheet_fire = Resources.LoadAll<Sprite>("Sprites/tile-fire");
         spriteSheet_field = Resources.LoadAll<Sprite>("Sprites/tile-field");
         spriteSheet_cottage = Resources.LoadAll<Sprite>("Sprites/tile-cottage");
@@ -40,6 +44,10 @@ public static class ResourceLoader
                 return spriteSheet_rocks1;
             case TileType.Rocks2 :
                 return spriteSheet_rocks2;
+            case TileType.Rocks3 :
+                return spriteSheet_rocks3;
+            case TileType.Rocks4 :
+                return spriteSheet_rocks4;
             case TileType.Fire :
                 return spriteSheet_fire;
             case TileType.Field :

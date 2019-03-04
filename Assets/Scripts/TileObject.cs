@@ -42,7 +42,7 @@ public class TileObject : MonoBehaviour
         }
         
         if (render == null) { render = gameObject.GetComponent<SpriteRenderer>(); }
-        render.sprite = ResourceLoader.GetSpriteSheet(startType)[(int)seasonType];
+        if (render != null) { render.sprite = ResourceLoader.GetSpriteSheet(startType)[(int)seasonType]; }
 
         if (startType != finishedType)
         {
@@ -71,5 +71,11 @@ public class TileObject : MonoBehaviour
         Color temp = render.color;
         temp.a = newAlpha;
         render.color = temp;
+    }
+
+    public void SetCompleteSprite(TileType type)
+    {
+        finishedType = type;
+        startType = type;
     }
 }
