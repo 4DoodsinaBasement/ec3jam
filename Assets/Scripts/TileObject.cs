@@ -10,8 +10,8 @@ public class TileObject : MonoBehaviour
     public SpriteRenderer render;
 
     public bool underConstruction = false;
-    public float buildProgress = 0;
-    public float buildTarget;
+    public float buildTime;
+    public float buildCounter;
 
     public bool isBurning = false;
     int burnTime = 20;
@@ -25,7 +25,7 @@ public class TileObject : MonoBehaviour
         render = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (isBurning)
         {
@@ -53,6 +53,15 @@ public class TileObject : MonoBehaviour
             SetAlpha(1.0f);
         }
     }
+
+    // public void BuildBuilding(float time)
+    // {
+    //     underConstruction = true;
+    //     buildTime = time;
+        
+    //     finishedType = TileType.Fire;
+    //     startType = TileType.Fire;
+    // }
 
     public void BurnBuilding()
     {

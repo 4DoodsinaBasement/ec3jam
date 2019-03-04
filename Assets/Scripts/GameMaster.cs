@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 public enum SeasonType {Spring = 0, Summer = 1, Autumn = 2, Winter = 3};
-public enum TileType {Fire = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5, Rocks0 = 10, Rocks1 = 11, Rocks2 = 12, Rocks3 = 13, Rocks4 = 14};
+public enum TileType {Fire = -2, Building = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5, Rocks0 = 10, Rocks1 = 11, Rocks2 = 12, Rocks3 = 13, Rocks4 = 14};
 
 
 public class GameMaster : MonoBehaviour
@@ -119,12 +119,12 @@ public class GameMaster : MonoBehaviour
         {
             if (tile.underConstruction)
             {
-                tile.buildProgress += 0.05f;
+                tile.buildCounter += 0.05f;
 
-                if (tile.buildProgress >= tile.buildTarget) // Building finishes building
+                if (tile.buildCounter >= tile.buildTime) // Building finishes building
                 {
                     tile.underConstruction = false;
-                    tile.buildProgress = 0;
+                    tile.buildCounter = 0;
                     tile.finishedType = tile.startType;
 
                     switch (tile.finishedType)
@@ -654,16 +654,16 @@ public class GameMaster : MonoBehaviour
             switch (tile)
             {
                 case TileType.Cottage : 
-                    activeGrid[randomTile].buildTarget = CottageData.buildTime;
+                    activeGrid[randomTile].buildTime = CottageData.buildTime;
                     break;
                 case TileType.Farm : 
-                    activeGrid[randomTile].buildTarget = FarmData.buildTime;
+                    activeGrid[randomTile].buildTime = FarmData.buildTime;
                     break;
                 case TileType.Mill : 
-                    activeGrid[randomTile].buildTarget = MillData.buildTime;
+                    activeGrid[randomTile].buildTime = MillData.buildTime;
                     break;
                 case TileType.Market : 
-                    activeGrid[randomTile].buildTarget = MarketData.buildTime;
+                    activeGrid[randomTile].buildTime = MarketData.buildTime;
                     break;
             }
             activeGrid[randomTile].underConstruction = true;
