@@ -12221,6 +12221,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673175499}
   m_CullTransparentMesh: 0
+--- !u!1 &673882788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 673882789}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &673882789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673882788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -93.333, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 1, z: 1}
+  m_Children:
+  - {fileID: 837151254}
+  m_Father: {fileID: 1227968368}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676173685
 GameObject:
   m_ObjectHideFlags: 0
@@ -15126,7 +15157,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1227968368}
+  m_Father: {fileID: 673882789}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -17755,6 +17786,9 @@ MonoBehaviour:
   fadeOutMusic: 0
   currentSeason: {fileID: 0}
   currentTurns: 0
+  totalTurnTime: 60
+  totalTickCount: 10
+  totalTickTime: 6
   currentTickCount: 0
   currentTickTime: 0
   populationCap: 0
@@ -17769,6 +17803,14 @@ MonoBehaviour:
   marketCount: 0
   fortsCount: 0
   populationIncreasePercent: 0
+  buildRate: 1
+  starveChance: 0.5
+  exposeChance: 0.25
+  fireChance: 0.005
+  SeasonalEncounterChance: 0.4
+  tickEncounterChance: 0.2
+  grainEncounterBonus: 0
+  encounterData: []
   report_populationIncrease: 0
   report_grainIncrease: 0
   report_sterlingIncrease: 0
@@ -17777,6 +17819,7 @@ MonoBehaviour:
   report_upkeepCost_sterling: 0
   report_grainSpentOnPop: 0
   report_starvationDeaths: 0
+  reportMan: {fileID: 0}
   notify_exposureDeaths: 0
   notify_lumberIncrease: 0
 --- !u!4 &946344398
@@ -22736,7 +22779,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 837151254}
+  - {fileID: 673882789}
   m_Father: {fileID: 221289148}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42665,6 +42708,8 @@ MonoBehaviour:
   Lumber: {fileID: 15435822416649263}
   Sterling: {fileID: 8215891756216725285}
   seasonLabel: {fileID: 873201865}
+  progressBarObject: {fileID: 673882788}
+  percent: 0
 --- !u!4 &5406044968291830679
 Transform:
   m_ObjectHideFlags: 0
