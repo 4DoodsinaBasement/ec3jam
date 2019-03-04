@@ -98,6 +98,7 @@ public class GameMaster : MonoBehaviour
     void Start()
     {
         currentSeason = seasonData[0];
+        Debug.Log("Season Upkeep into " + currentSeason.seasonString);
         fireChanceOriginal = fireChance;
 
         LoadTiles();
@@ -140,14 +141,14 @@ public class GameMaster : MonoBehaviour
             if (currentTickCount < totalTickCount)
             {
                 GameTick();
-                Debug.Log("Game Tick");
+                Debug.Log("Game Tick " + currentTickCount);
             }
             else
             {
                 currentTickCount = 0;
                 UpdateTiles();
                 notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
-                Debug.Log("Season Upkeep");
+                Debug.Log("Season Upkeep into " + currentSeason.seasonString);
             }
 
 
@@ -534,34 +535,20 @@ public class GameMaster : MonoBehaviour
     }
     void CheckFire()
     {
-        List<TileType> buildingsBuilt = new List<TileType>();
-        for (int i = 0; i < cottageCount; i++) { buildingsBuilt.Add(TileType.Cottage); }
-        for (int i = 0; i < farmCount; i++) { buildingsBuilt.Add(TileType.Farm); }
-        for (int i = 0; i < millCount; i++) { buildingsBuilt.Add(TileType.Mill); }
-        for (int i = 0; i < marketCount; i++) { buildingsBuilt.Add(TileType.Market); }
-
-        foreach(TileType building in buildingsBuilt)
+        foreach (TileObject tile in activeGrid)
         {
-            if (PercentChance(fireChance * currentSeason.FireMod))
+            if (tile.finishedType == TileType.Cottage || 
+                tile.finishedType == TileType.Farm || 
+                tile.finishedType == TileType.Mill || 
+                tile.finishedType == TileType.Market)
             {
-                switch (building)
+                if (PercentChance(fireChance * currentSeason.FireMod))
                 {
-                    case TileType.Cottage :
-                        cottageCount--;
-                        break;
-                    case TileType.Farm :
-                        farmCount--;
-                        break;
-                    case TileType.Mill :
-                        millCount--;
-                        break;
-                    case TileType.Market :
-                        marketCount--;
-                        break;
-                }
-                foreach (TileObject tile in activeGrid) { if(tile.finishedType == building) { tile.finishedType = TileType.Field; break; } }
+                    notifyTray.AddSoundNotification("A " + tile.finishedType.ToString() + " burned down!");
 
-                notifyTray.AddNotification("A " + building.ToString() + " burned down!");
+                    tile.finishedType = TileType.Field;
+                    tile.startType = TileType.Field;
+                }
             }
         }
 
