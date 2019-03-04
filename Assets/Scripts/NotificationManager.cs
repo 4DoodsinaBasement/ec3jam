@@ -24,6 +24,12 @@ public class NotificationManager : MonoBehaviour
         }
     }
 
+    public void AddSoundNotification(string message)
+    {
+        source.Play();
+        AddNotification(message);
+    }
+
     public void AddNotification(string message)
     {
         if (notifications.Count < maxDisplayedNotifications)
@@ -42,6 +48,5 @@ public class NotificationManager : MonoBehaviour
         {
             tray.text += "\n" + notify;
         }
-        source.Play();
     }
 }

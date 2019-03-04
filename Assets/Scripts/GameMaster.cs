@@ -37,9 +37,10 @@ public class GameMaster : MonoBehaviour
     // Time Settings
     int maxTurns = 12; // number of maxiumn turns
     public int currentTurns = 0;
-    float totalTurnTime = 60;
+    public float totalTurnTime = 60;
+    public int totalTickCount = 10;
+    public float totalTickTime = 6;
     public float currentTickCount = 0;
-    float totalTickTime = 6;
     public float currentTickTime = 0;
     int counter = 0;
 
@@ -128,7 +129,7 @@ public class GameMaster : MonoBehaviour
         if (currentTickTime >= totalTickTime)
         {
             currentTickTime = 0; currentTickCount++;
-            if (currentTickCount < 10)
+            if (currentTickCount < totalTickCount)
             {
                 GameTick();
                 Debug.Log("Game Tick");
