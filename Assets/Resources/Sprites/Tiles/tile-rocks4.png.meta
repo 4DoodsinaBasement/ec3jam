@@ -1,11 +1,15 @@
 fileFormatVersion: 2
-guid: bda8d868ab7c3814ea2b26f49b970519
+guid: dd681e23b464cf344838e92036048e40
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tile-field_0
-    21300002: tile-field_1
-    21300004: tile-field_2
-    21300006: tile-field_3
+    21300000: tile - blankrocky1_0
+    21300002: tile - blankrocky1_1
+    21300004: tile - blankrocky1_2
+    21300006: tile - blankrocky1_3
+    21300008: tile-rocks1_0
+    21300010: tile-rocks1_1
+    21300012: tile-rocks1_2
+    21300014: tile-rocks1_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -93,19 +97,19 @@ TextureImporter:
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile-field_0
+      name: tile-rocks1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 195
+        y: 192
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +117,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7c881b23bbb57a46a142416c8a41808
+      spriteID: 504f44a3f5eaae54d95a4ac7d1a36bd5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-field_1
+      name: tile-rocks1_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 130
+        y: 128
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c480d054d4d5b6449ba75d8bdfc3e607
+      spriteID: 0e5d0223b2004264e8943fdc5127e69b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-field_2
+      name: tile-rocks1_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 65
+        y: 64
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +157,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e9f39655ba6bc946b183e46915c2ad5
+      spriteID: 051c33431f34f9f42b674d844552d8bb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-field_3
+      name: tile-rocks1_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 128
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +177,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1793e25582fea3a47b540264e36f40b1
+      spriteID: 96a421036e07986488ca32828feb6018
       vertices: []
       indices: 
       edges: []
@@ -181,7 +185,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 590828d4223f5c24591cf5e8af54b82b
+    spriteID: 010760ecb4061cb40a8fa4c8797b306a
     vertices: []
     indices: 
     edges: []

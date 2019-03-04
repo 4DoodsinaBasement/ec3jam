@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 public enum SeasonType {Spring = 0, Summer = 1, Autumn = 2, Winter = 3};
-public enum TileType {Rocks1 = -2, Rocks2 = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
+public enum TileType {Fire = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5, Rocks0 = 10, Rocks1 = 11, Rocks2 = 12, Rocks3 = 13, Rocks4 = 14};
 
 
 public class GameMaster : MonoBehaviour
@@ -17,6 +17,7 @@ public class GameMaster : MonoBehaviour
     SceneChanger sceneChanger = new SceneChanger();
 
     // Data
+    public AudioSource burnSound;
     public TransitionHandler transitionHandler;
     public NotificationManager notifyTray;
     public GameObject activeGridObject;
@@ -108,7 +109,7 @@ public class GameMaster : MonoBehaviour
         LoadTiles();
 
         for (int i = 0; i < musicFadeSteps; i++)
-        { turnMusicDown.Add(1.0f - ((1.0f / musicFadeSteps) * i)); }
+        { turnMusicDown.Add(music.maxVol - ((music.maxVol / musicFadeSteps) * i)); }
         turnMusicDown.Add(0.0f);
         music.SetTrack(SeasonType.Spring);
     }
@@ -197,18 +198,11 @@ public class GameMaster : MonoBehaviour
         }
         foreach (TileObject tile in passiveGrid)
         {
-            if (PercentChance(0.15f))
+            if (PercentChance(0.2f))
             {
-                if (PercentChance(0.5f))
-                {
-                    tile.startType = TileType.Rocks1;
-                    tile.finishedType = TileType.Rocks1;
-                }
-                else
-                {
-                    tile.startType = TileType.Rocks2;
-                    tile.finishedType = TileType.Rocks2;
-                }
+                int randomEnvironmentTile = Random.Range((int)TileType.Rocks1, (int)TileType.Rocks4 + 1);
+                tile.startType = (TileType)randomEnvironmentTile;
+                tile.finishedType = (TileType)randomEnvironmentTile;
             }
             else
             {
@@ -230,8 +224,8 @@ public class GameMaster : MonoBehaviour
             {
                 case SeasonType.Spring : tile.SetColor(new Color(0.9f, 0.9f, 0.9f, 1.0f)); break;
                 case SeasonType.Summer : tile.SetColor(new Color(0.85f, 0.85f, 0.85f, 1.0f)); break;
-                case SeasonType.Autumn : tile.SetColor(new Color(0.92f, 0.92f, 0.92f, 1.0f)); break;
-                case SeasonType.Winter : tile.SetColor(new Color(0.82f, 0.82f, 0.82f, 1.0f)); break;
+                case SeasonType.Autumn : tile.SetColor(new Color(0.85f, 0.85f, 0.85f, 1.0f)); break;
+                case SeasonType.Winter : tile.SetColor(new Color(0.85f, 0.85f, 0.85f, 1.0f)); break;
             }
         }
     }
@@ -560,6 +554,8 @@ public class GameMaster : MonoBehaviour
     }
     void CheckFire()
     {
+        bool somethingBurned = false;
+        
         foreach (TileObject tile in activeGrid)
         {
             if (tile.finishedType == TileType.Cottage || 
@@ -569,13 +565,14 @@ public class GameMaster : MonoBehaviour
             {
                 if (PercentChance(fireChance * currentSeason.FireMod))
                 {
-                    notifyTray.AddSoundNotification("A " + tile.finishedType.ToString() + " burned down!");
-
-                    tile.finishedType = TileType.Field;
-                    tile.startType = TileType.Field;
+                    notifyTray.AddNotification("A " + tile.finishedType.ToString() + " burned down!");
+                    somethingBurned = true;
+                    tile.BurnBuilding();
                 }
             }
         }
+
+        if (somethingBurned) { burnSound.Play(); }
 
         UpdatePopCap();
     }

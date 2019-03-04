@@ -163,6 +163,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &10328069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -211,149 +212,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &33504545
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 33504546}
-  - component: {fileID: 33504550}
-  - component: {fileID: 33504549}
-  - component: {fileID: 33504548}
-  - component: {fileID: 33504547}
-  m_Layer: 5
-  m_Name: Button (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &33504546
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33504545}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1926531366}
-  m_Father: {fileID: 898721690}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.124000005}
-  m_AnchorMax: {x: 0.5, y: 0.124000005}
-  m_AnchoredPosition: {x: 5.200012, y: 43}
-  m_SizeDelta: {x: 432.19995, y: 81.20001}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &33504547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33504545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f13dd119a607e4845a0e39347f08ab59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newScene: Main Menu
---- !u!114 &33504548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33504545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 33504549}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 33504547}
-        m_MethodName: GoToScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &33504549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33504545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &33504550
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33504545}
-  m_CullTransparentMesh: 0
 --- !u!1 &37190759
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +263,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &37190762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -504,6 +363,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &37798630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -603,6 +463,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &44458964
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -702,6 +563,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &59040632
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -801,6 +663,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &59517695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -900,6 +763,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &68344798
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -999,6 +863,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &71311471
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1098,6 +963,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &72623104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1197,6 +1063,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &79674394
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1296,6 +1163,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &89330900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1395,6 +1263,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &97410630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1494,6 +1363,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &101396188
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1593,6 +1463,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &110264938
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1692,6 +1563,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &112677809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1791,6 +1663,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &121191186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1890,6 +1763,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &122176659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1989,6 +1863,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &143039257
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2088,6 +1963,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &159866028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2187,6 +2063,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &159919839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2266,6 +2143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 0}
+  maxVol: 0.5
 --- !u!82 &168341785
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2427,6 +2305,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &169946989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2526,6 +2405,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &184753596
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2625,6 +2505,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &187992965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2724,6 +2605,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &192469528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2823,6 +2705,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &202153726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2922,6 +2805,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &206849056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3021,6 +2905,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &211380763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3120,6 +3005,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &226129847
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3219,6 +3105,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &234113279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3318,6 +3205,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &255010897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3417,6 +3305,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &263926330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3516,6 +3405,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &265610271
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3615,6 +3505,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &265905421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3714,6 +3605,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &270207312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3813,6 +3705,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &270749662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3912,6 +3805,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &277916635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4011,6 +3905,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &293321651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4110,6 +4005,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &301254466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4209,6 +4105,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &317080936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4308,6 +4205,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &317652341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4407,6 +4305,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &331277509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4506,6 +4405,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &344612870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4605,6 +4505,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &353257123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4704,6 +4605,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &356613896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4803,6 +4705,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &370369197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4902,6 +4805,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &393257789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5001,6 +4905,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &415197587
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5100,6 +5005,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &415724127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5199,6 +5105,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &424125510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5298,6 +5205,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &445415830
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5397,6 +5305,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &449671856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5496,6 +5405,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &453611010
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5595,6 +5505,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &453924306
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5694,6 +5605,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &492331640
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5793,6 +5705,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &492547763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5841,86 +5754,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &500000443
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 500000444}
-  - component: {fileID: 500000446}
-  - component: {fileID: 500000445}
-  m_Layer: 5
-  m_Name: Text (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &500000444
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500000443}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 898721690}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.25185186}
-  m_AnchorMax: {x: 0.5, y: 0.25185186}
-  m_AnchoredPosition: {x: 3.2000122, y: 214}
-  m_SizeDelta: {x: 1024, y: 215.90002}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &500000445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500000443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 60
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Aliens are impressed by your colony and recruit you to build a colony on
-    the Moon.
---- !u!222 &500000446
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500000443}
-  m_CullTransparentMesh: 0
 --- !u!1 &507356701
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,6 +5805,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &507356704
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6071,6 +5905,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &511794801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6170,6 +6005,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &518757609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6269,6 +6105,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &533660678
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6368,6 +6205,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &534888082
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6416,149 +6254,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &538592192
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 538592193}
-  - component: {fileID: 538592197}
-  - component: {fileID: 538592196}
-  - component: {fileID: 538592195}
-  - component: {fileID: 538592194}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &538592193
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538592192}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 618104128}
-  m_Father: {fileID: 898721690}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.16755551}
-  m_AnchorMax: {x: 0.5, y: 0.16755551}
-  m_AnchoredPosition: {x: 5.200012, y: 148}
-  m_SizeDelta: {x: 640.5, y: 120.20001}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &538592194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538592192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f13dd119a607e4845a0e39347f08ab59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newScene: GameScene
---- !u!114 &538592195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538592192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 538592196}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 538592194}
-        m_MethodName: GoToScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &538592196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538592192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &538592197
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538592192}
-  m_CullTransparentMesh: 0
 --- !u!1 &546296609
 GameObject:
   m_ObjectHideFlags: 0
@@ -6610,6 +6305,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &546296612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6709,6 +6405,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &547267396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6757,6 +6454,156 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &551214145
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 898721690}
+    m_Modifications:
+    - target: {fileID: 5574865797412958665, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_Name
+      value: Buttons
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -400
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584905462069767808, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: newScene
+      value: Main Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584905463472850827, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_text
+      value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584905463472850827, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584905463472850827, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584905463472850827, guid: d881dbed6197569489411f38116df446,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d881dbed6197569489411f38116df446, type: 3}
+--- !u!224 &551214146 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5081963518060471057, guid: d881dbed6197569489411f38116df446,
+    type: 3}
+  m_PrefabInstance: {fileID: 551214145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &561192501
 GameObject:
   m_ObjectHideFlags: 0
@@ -6808,6 +6655,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &561192504
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6907,6 +6755,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &573543757
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7006,6 +6855,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &587392808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7105,6 +6955,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &594657547
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7204,6 +7055,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &599985305
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7252,85 +7104,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &618104127
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 618104128}
-  - component: {fileID: 618104130}
-  - component: {fileID: 618104129}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &618104128
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618104127}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 538592193}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &618104129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618104127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 60
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: PLAY AGAIN
---- !u!222 &618104130
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618104127}
-  m_CullTransparentMesh: 0
 --- !u!1 &619444290
 GameObject:
   m_ObjectHideFlags: 0
@@ -7382,6 +7155,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &619444293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7481,6 +7255,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &640571321
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7580,6 +7355,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &641560212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7679,6 +7455,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &644654503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7738,8 +7515,9 @@ GameObject:
   - component: {fileID: 644861942}
   - component: {fileID: 644861941}
   - component: {fileID: 644861940}
+  - component: {fileID: 644861943}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7809,6 +7587,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &644861943
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644861939}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 81d509a1c4f6c95479c3721b0a0c4c8f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &649048762
 GameObject:
   m_ObjectHideFlags: 0
@@ -7860,6 +7734,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &649048765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7959,6 +7834,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &649519078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8058,6 +7934,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &655871455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8157,6 +8034,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &671448967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8256,6 +8134,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &675404998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8355,6 +8234,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &677170558
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8403,6 +8283,173 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &687610067
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 898721690}
+    m_Modifications:
+    - target: {fileID: 6761274896696293682, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_Name
+      value: Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274897096185934, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_text
+      value: You Win!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274897096185934, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274897096185934, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274897096185934, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274897096185934, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274897096185934, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6761274897096185934, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 13776acabc20b6e418731cc170fb3d18,
+        type: 2}
+    - target: {fileID: 6761274897096185934, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 21912944210733298, guid: 13776acabc20b6e418731cc170fb3d18,
+        type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 576ba31cd9957274a9cbacd7b1d697f5, type: 3}
+--- !u!224 &687610068 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6761274896696293681, guid: 576ba31cd9957274a9cbacd7b1d697f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 687610067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &689950117
 GameObject:
   m_ObjectHideFlags: 0
@@ -8454,6 +8501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &689950120
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8553,6 +8601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &698088247
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8652,6 +8701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &709103963
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8751,6 +8801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &709582081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8850,6 +8901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &712503921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8949,6 +9001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &715967286
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9048,6 +9101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &717314358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9147,6 +9201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &725090576
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9246,6 +9301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &729364787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9345,6 +9401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &740345524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9444,6 +9501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &750449978
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9543,6 +9601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &752787465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9642,6 +9701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &758926161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9741,6 +9801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &766146181
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9840,6 +9901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &767726816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9939,6 +10001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &769953010
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10038,6 +10101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &779128340
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10137,6 +10201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &782891684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10236,6 +10301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &786959767
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10335,6 +10401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &787667534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10383,85 +10450,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &793249387
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 793249388}
-  - component: {fileID: 793249390}
-  - component: {fileID: 793249389}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &793249388
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793249387}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 898721690}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.24074073}
-  m_AnchorMax: {x: 0.5, y: 0.24074073}
-  m_AnchoredPosition: {x: 0, y: 389}
-  m_SizeDelta: {x: 1920, y: 347}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &793249389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793249387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 200
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 300
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: YOU WIN
---- !u!222 &793249390
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793249387}
-  m_CullTransparentMesh: 0
 --- !u!1 &796303235
 GameObject:
   m_ObjectHideFlags: 0
@@ -10513,6 +10501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &796303238
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10612,6 +10601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &808535370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10711,6 +10701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &814637884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10810,6 +10801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &826474852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10909,6 +10901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &826483915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11008,6 +11001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &831271381
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11107,6 +11101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &844242460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11206,6 +11201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &845290839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11305,6 +11301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &855033655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11404,6 +11401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &857499862
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11503,6 +11501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &864821522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11602,6 +11601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &867100000
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11701,6 +11701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &873317178
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11800,6 +11801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &880029487
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11899,6 +11901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &882955923
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11998,6 +12001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &897438567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12136,10 +12140,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 793249388}
-  - {fileID: 538592193}
-  - {fileID: 33504546}
-  - {fileID: 500000444}
+  - {fileID: 687610068}
+  - {fileID: 551214146}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12199,6 +12201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &900590379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12298,6 +12301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &909370868
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12397,6 +12401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &910136859
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12496,6 +12501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &916464008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12595,6 +12601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &936481179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12694,6 +12701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &936695358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12793,6 +12801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &948790266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12892,6 +12901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &954160523
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12991,6 +13001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &963068993
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13090,6 +13101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &966617722
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13189,6 +13201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &981654635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13288,6 +13301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &985504279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13387,6 +13401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1006442311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13486,6 +13501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1029611926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13585,6 +13601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1049278690
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13684,6 +13701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1058009850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13783,6 +13801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1059297446
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13882,6 +13901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1069640398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13981,6 +14001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1072797661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14080,6 +14101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1094796196
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14179,6 +14201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1099452558
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14278,6 +14301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1108958673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14443,6 +14467,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1130772061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14542,6 +14567,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1132524256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14641,6 +14667,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1140452262
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14740,6 +14767,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1141060669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14839,6 +14867,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1152141733
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14938,6 +14967,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1152436184
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15037,6 +15067,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1157220753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15136,6 +15167,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1158504807
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15235,6 +15267,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1168107054
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15334,6 +15367,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1175018239
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15433,6 +15467,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1179914119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15532,6 +15567,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1180356540
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15758,6 +15794,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1203263041
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15857,6 +15894,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1213767077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15956,6 +15994,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1217320521
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16055,6 +16094,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1235125921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16154,6 +16194,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1236646491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16253,6 +16294,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1238371391
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16352,6 +16394,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1241696947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16451,6 +16494,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1253296707
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16508,8 +16552,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1255600585}
+  - component: {fileID: 1255600586}
   m_Layer: 0
-  m_Name: Passive Grid
+  m_Name: Background Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16792,6 +16837,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1255600586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255600584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e288c733194c7e4a88b60bc26aa5fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundGrid: []
 --- !u!1 &1256138783
 GameObject:
   m_ObjectHideFlags: 0
@@ -16843,6 +16901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1256138786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16942,6 +17001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1261860881
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17041,6 +17101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1262186391
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17140,6 +17201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1270320198
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17239,6 +17301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1272703338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17338,6 +17401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1277248250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17437,6 +17501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1299168070
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17536,6 +17601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1300764444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17635,6 +17701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1307661103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17734,6 +17801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1308493765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17833,6 +17901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1309546220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17932,6 +18001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1311215856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18031,6 +18101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1312235220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18130,6 +18201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1316669449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18229,6 +18301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1331818743
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18328,6 +18401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1334685330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18427,6 +18501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1341010531
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18526,6 +18601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1347193444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18625,6 +18701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1350576230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18724,6 +18801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1352774616
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18823,6 +18901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1353290028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18922,6 +19001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1365361687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19021,6 +19101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1371407467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19120,6 +19201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1380286061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19219,6 +19301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1387852966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19318,6 +19401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1396714598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19417,6 +19501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1399610629
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19516,6 +19601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1400961003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19615,6 +19701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1405447239
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19714,6 +19801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1405782088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19813,6 +19901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1412893689
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19912,6 +20001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1414636933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20011,6 +20101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1431982098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20110,6 +20201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1453342176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20209,6 +20301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1460949153
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20308,6 +20401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1482337695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20407,6 +20501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1485425598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20506,6 +20601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1496372312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20605,6 +20701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1498131450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20704,6 +20801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1501402242
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20803,6 +20901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1517860409
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20902,6 +21001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1520787084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21001,6 +21101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1525904203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21100,6 +21201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1527556626
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21199,6 +21301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1527781693
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21298,6 +21401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1528228986
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21397,6 +21501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1537800265
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21496,6 +21601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1548661947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21595,6 +21701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1553064582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21694,6 +21801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1568562544
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21793,6 +21901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1573643004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21892,6 +22001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1588000335
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21991,6 +22101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1592552532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22090,6 +22201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1604930028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22189,6 +22301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1605560124
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22288,6 +22401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1623896810
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22387,6 +22501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1627043164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22486,6 +22601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1633977388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22585,6 +22701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1640751562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22684,6 +22801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1649100688
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22783,6 +22901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1656731372
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22882,6 +23001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1657870484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22981,6 +23101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1661129910
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23080,6 +23201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1702065751
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23179,6 +23301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1706966927
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23278,6 +23401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1709329775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23377,6 +23501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1717616267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23476,6 +23601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1735696059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23575,6 +23701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1743970882
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23674,6 +23801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1749592607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23773,6 +23901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1751027159
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23872,6 +24001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1754652312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23971,6 +24101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1774205148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24070,6 +24201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1782636563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24169,6 +24301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1791565376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24268,6 +24401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1801602484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24367,6 +24501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1802875547
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24466,6 +24601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1813987735
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24565,6 +24701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1816404992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24664,6 +24801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1823896491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24763,6 +24901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1831649644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24862,6 +25001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1849826019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24961,6 +25101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1860803289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25060,6 +25201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1876327039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25159,6 +25301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1885994427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25258,6 +25401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1887125695
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25357,6 +25501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1888162686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25456,6 +25601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1897851184
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25555,6 +25701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1899502579
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25654,6 +25801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1921275969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25702,85 +25850,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1926531365
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1926531366}
-  - component: {fileID: 1926531368}
-  - component: {fileID: 1926531367}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1926531366
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926531365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 33504546}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1926531367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926531365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 60
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Main Menu
---- !u!222 &1926531368
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926531365}
-  m_CullTransparentMesh: 0
 --- !u!1 &1949566879
 GameObject:
   m_ObjectHideFlags: 0
@@ -25832,6 +25901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1949566882
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25931,6 +26001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1956951586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26030,6 +26101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1958104036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26129,6 +26201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1960113155
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26228,6 +26301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1975676820
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26327,6 +26401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1977262402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26426,6 +26501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &1990505216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26525,6 +26601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2007086942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26624,6 +26701,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2047761738
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26723,6 +26801,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2050104775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26822,6 +26901,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2073641320
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26921,6 +27001,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2077951647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27020,6 +27101,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2079035220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27119,6 +27201,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2092055823
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27218,6 +27301,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2097362339
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27317,6 +27401,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2130453929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27416,6 +27501,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2141042889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27515,6 +27601,7 @@ MonoBehaviour:
   underConstruction: 0
   buildProgress: 0
   buildTarget: 0
+  isBurning: 0
 --- !u!212 &2144007094
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27563,3 +27650,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1402842097323482970
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8205707672541331978, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_Name
+      value: Walpole
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707672541331979, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707674527907161, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707674527907160, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205707674527907160, guid: 531d9c582e549bd42960c9b45ae57550,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 531d9c582e549bd42960c9b45ae57550, type: 3}
