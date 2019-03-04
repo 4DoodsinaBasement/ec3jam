@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seasonType: 0
   seasonString: Spring
-  PopulationMod: 1.6
+  PopulationMod: 0.33
   LumberMod: 1
   SterlingMod: 1
   BuildMod: 1

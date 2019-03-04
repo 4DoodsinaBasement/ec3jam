@@ -16,7 +16,7 @@ public static class CottageData
     public static int lumberUpkeep = 3;
     public static int sterlingUpkeep = 0;
     // Benefits
-    public static int populationCapIncrease = 15;
+    public static int populationCapIncrease = 20;
     public static int grainIncrease;
     public static int lumberIncrease;
     public static int sterlingIncrease;
@@ -29,7 +29,7 @@ public static class FarmData
     // Build Costs
     public static float buildTime = 12.0f;
     public static int grainCost = 10;
-    public static int lumberCost = 10;
+    public static int lumberCost = 30;
     public static int sterlingCost = 0;
     // Upkeep Costs
     public static int grainUpkeep = 10; //only applied in spring, check the UpkeepCost function
@@ -47,10 +47,10 @@ public static class MillData
     public static string buildingName = "Mill";
     public static string buildingDescription = "Produces Wood";
     // Build Costs
-    public static float buildTime = 6.0f;
+    public static float buildTime = 7.0f;
     public static int grainCost = 10;
-    public static int lumberCost = 0;
-    public static int sterlingCost = 10;
+    public static int lumberCost = 5;
+    public static int sterlingCost = 20;
     // Upkeep Costs
     public static int grainUpkeep = 3;
     public static int lumberUpkeep = 0;
@@ -58,7 +58,7 @@ public static class MillData
     // Benefits
     public static int populationCapIncrease;
     public static int grainIncrease;
-    public static int lumberIncrease = 2;
+    public static int lumberIncrease = 4;
     public static int sterlingIncrease;
 }
 
@@ -70,7 +70,7 @@ public static class MarketData
     public static float buildTime = 9.0f;
     public static int grainCost = 15;
     public static int lumberCost = 50;
-    public static int sterlingCost = 20;
+    public static int sterlingCost = 5;
     // Upkeep Costs
     public static int grainUpkeep = 0;
     public static int lumberUpkeep = 1;
@@ -79,7 +79,7 @@ public static class MarketData
     public static int populationCapIncrease;
     public static int grainIncrease;
     public static int lumberIncrease;
-    public static int sterlingIncrease = 50;
+    public static int sterlingIncrease = 30;
 }
 
 public static class FortData

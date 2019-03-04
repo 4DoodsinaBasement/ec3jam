@@ -23,13 +23,13 @@ MonoBehaviour:
   signAddEffect1: 0
   value1Effect1: 50
   value2Effect1: 50
-  activateEffect2: 1
+  activateEffect2: 0
   typeEffect2: 1
   equationEffect2: 0
   signAddEffect2: 0
   value1Effect2: 50
   value2Effect2: 100
-  activateEffect3: 1
+  activateEffect3: 0
   typeEffect3: 2
   equationEffect3: 0
   signAddEffect3: 0

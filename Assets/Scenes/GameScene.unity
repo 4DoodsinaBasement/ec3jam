@@ -18074,10 +18074,10 @@ MonoBehaviour:
   currentTickCount: 0
   currentTickTime: 0
   populationCap: 0
-  population: 120
-  grain: 300
-  lumber: 200
-  sterling: 80
+  population: 60
+  grain: 200
+  lumber: 165
+  sterling: 85
   buildingsConstructing: 0
   cottageCount: 0
   farmCount: 0
@@ -18087,22 +18087,34 @@ MonoBehaviour:
   populationIncreasePercent: 0
   buildRate: 1
   starveChance: 0.5
-  exposeChance: 0.25
+  exposeChance: 0.2
   fireChance: 0.005
-  SeasonalEncounterChance: 1
+  SeasonalEncounterChance: 0.6
   tickEncounterChance: 0.2
   grainEncounterBonus: 0
   encounterData:
+  - {fileID: 11400000, guid: 3f709d033a6d3104dbb4ad0a0b99a9be, type: 2}
+  - {fileID: 11400000, guid: f11a38634c03782448b1f1a13720bf09, type: 2}
+  - {fileID: 11400000, guid: 50ca44be33338364e9f16eb30e077835, type: 2}
+  - {fileID: 11400000, guid: 31013ccfffaeb5b449cefba003f2be9e, type: 2}
+  - {fileID: 11400000, guid: 47bf5b9819aa70544931ac9465202599, type: 2}
+  - {fileID: 11400000, guid: 5cff5b9b674f5554e8b3bfcf1a739a0e, type: 2}
+  - {fileID: 11400000, guid: 6078b21013b028443933415769418e51, type: 2}
+  - {fileID: 11400000, guid: ba33555e251fd394faf09eb29a9e2b32, type: 2}
+  - {fileID: 11400000, guid: 00c2182521a58f84bbb35ad5f4f30df7, type: 2}
+  - {fileID: 11400000, guid: 490e402b44b200c45aab7bd864a43c52, type: 2}
+  - {fileID: 11400000, guid: d3527c608783bd54eb29cab9a6c1aebd, type: 2}
   - {fileID: 11400000, guid: de4ec3ee034623d43bc3228fbc99025b, type: 2}
   - {fileID: 11400000, guid: a1ac5c99c6f6de14b9fcb301ef3292c5, type: 2}
+  - {fileID: 11400000, guid: a27915f441342d74b90eae4c5401b5ea, type: 2}
   - {fileID: 11400000, guid: d650568fa8879454a90a3bec89c135de, type: 2}
   - {fileID: 11400000, guid: bacda39d5c8a69a41a4d9e30f3954c4a, type: 2}
   - {fileID: 11400000, guid: 64a4e8a3f4e1d254392d969cf68d9604, type: 2}
+  - {fileID: 11400000, guid: 4f14cefafb712024186ad36efadb4f9f, type: 2}
   - {fileID: 11400000, guid: f5cb66001944461459bbd6a06f264989, type: 2}
   - {fileID: 11400000, guid: 3be627ff1f622374d92791aed77a82fa, type: 2}
+  - {fileID: 11400000, guid: 86db98e5025405848a7382f25e0bf348, type: 2}
   - {fileID: 11400000, guid: e4ac5c460854b944ab45b18d345e8d75, type: 2}
-  - {fileID: 11400000, guid: 50ca44be33338364e9f16eb30e077835, type: 2}
-  - {fileID: 11400000, guid: 6078b21013b028443933415769418e51, type: 2}
   report_populationIncrease: 0
   report_grainIncrease: 0
   report_sterlingIncrease: 0
@@ -24463,7 +24475,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tray: {fileID: 1762241451}
   source: {fileID: 0}
-  maxDisplayedNotifications: 20
 --- !u!224 &1280450403
 RectTransform:
   m_ObjectHideFlags: 0

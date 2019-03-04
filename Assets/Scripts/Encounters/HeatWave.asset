@@ -22,7 +22,7 @@ MonoBehaviour:
   equationEffect1: 1
   signAddEffect1: 1
   value1Effect1: 300
-  value2Effect1: 0
+  value2Effect1: 300
   activateEffect2: 0
   typeEffect2: 0
   equationEffect2: 0

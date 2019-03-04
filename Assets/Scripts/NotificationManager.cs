@@ -5,11 +5,11 @@ using UnityEngine.UI;
 using TMPro;
 
 public class NotificationManager : MonoBehaviour
-{
+{ 
     public TextMeshProUGUI tray;
     public AudioSource source;
     Queue<string> notifications = new Queue<string>();
-    public int maxDisplayedNotifications = 17;
+    int maxDisplayedNotifications = 8;
 
     void Awake()
     {
@@ -20,7 +20,7 @@ public class NotificationManager : MonoBehaviour
         tray.text = "";
         foreach (string notify in notifications)
         {
-            tray.text += "\n" + notify;
+            tray.text += "\n\n" + notify;
         }
     }
 
@@ -46,7 +46,7 @@ public class NotificationManager : MonoBehaviour
 
         foreach (string notify in notifications)
         {
-            tray.text += "\n" + notify;
+            tray.text += "\n\n" + notify;
         }
     }
 }

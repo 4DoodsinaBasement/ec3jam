@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seasonType: 1
   seasonString: Summer
-  PopulationMod: 1
+  PopulationMod: 0.25
   LumberMod: 1.2
   SterlingMod: 1.3
   BuildMod: 0.9

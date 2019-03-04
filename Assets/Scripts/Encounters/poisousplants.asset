@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2835f33d80ac06b4c9d002571b08fce7, type: 3}
-  m_Name: Zoe
+  m_Name: poisousplants
   m_EditorClassIdentifier: 
-  encounterType: 0
-  AvailableSeasons: 01000000
-  AvailableYears: 03000000
+  encounterType: 1
+  AvailableSeasons: 00000000010000000200000003000000
+  AvailableYears: 0100000002000000
   appearanceWeight: 5
-  OutputText: The Mighty cat goddess Zoey Requires an offering of {0} grain
+  OutputText: '{0} people ate poisonous plants'
   activateEffect1: 1
-  typeEffect1: 1
-  equationEffect1: 1
+  typeEffect1: 0
+  equationEffect1: 0
   signAddEffect1: 0
-  value1Effect1: 90
-  value2Effect1: 95
+  value1Effect1: 6
+  value2Effect1: 8
   activateEffect2: 0
-  typeEffect2: 3
+  typeEffect2: 0
   equationEffect2: 0
   signAddEffect2: 0
-  value1Effect2: 1
-  value2Effect2: 1
+  value1Effect2: 0
+  value2Effect2: 0
   activateEffect3: 0
   typeEffect3: 0
   equationEffect3: 0

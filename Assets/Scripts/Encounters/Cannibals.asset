@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2835f33d80ac06b4c9d002571b08fce7, type: 3}
-  m_Name: Zoe
+  m_Name: Cannibals
   m_EditorClassIdentifier: 
-  encounterType: 0
-  AvailableSeasons: 01000000
-  AvailableYears: 03000000
-  appearanceWeight: 5
-  OutputText: The Mighty cat goddess Zoey Requires an offering of {0} grain
+  encounterType: 1
+  AvailableSeasons: 03000000
+  AvailableYears: 0100000002000000
+  appearanceWeight: 100
+  OutputText: Cannibals! {0} people dissappeared found {1} grain
   activateEffect1: 1
-  typeEffect1: 1
-  equationEffect1: 1
-  signAddEffect1: 0
-  value1Effect1: 90
-  value2Effect1: 95
-  activateEffect2: 0
-  typeEffect2: 3
+  typeEffect1: 0
+  equationEffect1: 2
+  signAddEffect1: 1
+  value1Effect1: 25
+  value2Effect1: 45
+  activateEffect2: 1
+  typeEffect2: 1
   equationEffect2: 0
   signAddEffect2: 0
-  value1Effect2: 1
-  value2Effect2: 1
+  value1Effect2: 3
+  value2Effect2: 5
   activateEffect3: 0
   typeEffect3: 0
   equationEffect3: 0

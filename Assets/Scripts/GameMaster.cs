@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public enum SeasonType {Spring = 0, Summer = 1, Autumn = 2, Winter = 3};
 public enum TileType {Rocks1 = -2, Rocks2 = -1, Field = 0, Cottage = 1, Farm = 2, Mill = 3, Market = 4, Fort = 5};
 
@@ -11,6 +12,9 @@ public class GameMaster : MonoBehaviour
 {
     // Global Variables
     #region
+
+    //scene 
+    SceneChanger sceneChanger = new SceneChanger();
 
     // Data
     public TransitionHandler transitionHandler;
@@ -239,6 +243,7 @@ public class GameMaster : MonoBehaviour
     {
         NextSeason();
         ZeroReports();
+        CheckGameWin();
         CheckSeasonEncounter();
         PopulationIncrease();
         CollectGrain();
@@ -274,7 +279,7 @@ public class GameMaster : MonoBehaviour
     void PopulationIncrease()
     {
         populationIncreasePercent = Random.Range(0.0f, 0.1f);
-        report_populationIncrease = (int)(population * populationIncreasePercent * currentSeason.PopulationMod) + populationEncounterBonus;
+        report_populationIncrease = (int)(population * (populationIncreasePercent + currentSeason.PopulationMod)) + populationEncounterBonus;
         populationEncounterBonus = 0;
         population += report_populationIncrease;
     }
@@ -357,7 +362,7 @@ public class GameMaster : MonoBehaviour
         int value2 = 0; 
         int value3 = 0;
         int sign;
-
+        float mrfloat; 
         if (encoData.activateEffect1)
         {
             sign = (encoData.signAddEffect1) ? 1 : -1;
@@ -369,25 +374,30 @@ public class GameMaster : MonoBehaviour
                     { 
 
                         case EffectType.FarmScaler:
-                            grainEncounterBonus *= sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100);
+                            mrfloat = sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1)  /100f);
+                            grainEncounterBonus *= (int)mrfloat;
                             break;
                         case EffectType.FireChance:
-                            fireChance *= sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100);
+                            fireChance *= sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100f);
                             break;
                         case EffectType.Sterling:
-                            value1 = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100)) * sterling;
+                            mrfloat = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100f)) * sterling;
+                            value1 = (int)mrfloat;
                             sterling += value1;
                             break;
                         case EffectType.Lumber:
-                            value1 = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100)) * lumber;
+                            mrfloat = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100f)) * lumber;
+                            value1 = (int)mrfloat;
                             lumber += value1;
                             break;
                         case EffectType.Grain:
-                            value1 = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100)) * grain;
+                            mrfloat = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100f)) * grain;
+                            value1 = (int)mrfloat;
                             grain += value1;
                             break;
                         case EffectType.Population:
-                            value1 = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100)) * population;
+                            mrfloat = (sign * (Random.Range(encoData.value1Effect1, encoData.value2Effect1) / 100f)) * population;
+                            value1 = (int)mrfloat;
                             population += value1; 
                             break;
                     }
@@ -425,6 +435,13 @@ public class GameMaster : MonoBehaviour
                             break;
                     }                   
                     break;
+                case EffectEquation.cannibal:
+                    mrfloat = (Random.Range(encoData.value1Effect1, encoData.value2Effect1)/100f)*population;
+                    value1 = (int)mrfloat;
+                    population -= value1;
+                    value2 = Random.Range(encoData.value1Effect2, encoData.value2Effect2) * value1;
+                    grain += value2;
+                    break;
 
             }
 
@@ -434,9 +451,17 @@ public class GameMaster : MonoBehaviour
         }
 
 
+        //set messages 
+        if (encoData.encounterType == EncounterType.Seasonal)
+        {
+            encounterText = string.Format(encoData.OutputText, Mathf.Abs(value1), Mathf.Abs(value2), Mathf.Abs(value3));
+        }
 
-        encounterText = string.Format(encoData.OutputText, Mathf.Abs(value1), Mathf.Abs(value2), Mathf.Abs(value3));
-
+        if (encoData.encounterType == EncounterType.Tick)
+        {
+            string note = string.Format(encoData.OutputText, Mathf.Abs(value1), Mathf.Abs(value2), Mathf.Abs(value3));
+            notifyTray.AddSoundNotification(note);
+        }
 
 
     }
@@ -556,7 +581,14 @@ public class GameMaster : MonoBehaviour
     }
     void CheckTickEncounter()
     {
-        // TODO: Build Encounters
+        if (PercentChance(tickEncounterChance))
+        {
+            EncounterData currentEncounter = EncounterFinder(EncounterType.Tick);
+            if (!(currentEncounter is null)) {
+                ExecuteEncounter(currentEncounter);
+            }
+
+        }
     }
     #endregion
 
@@ -663,8 +695,22 @@ public class GameMaster : MonoBehaviour
         gameOver = population <= 0;
         if (gameOver)
         {
-            notifyTray.AddNotification("GAME OVER");
+            sceneChanger.newScene = "LoseMenu";
+            sceneChanger.GoToScene();
+            //notifyTray.AddNotification("GAME OVER");
         }
     }
+
+    void CheckGameWin()
+    {
+        
+        if (currentTurns == 12)
+        {
+            sceneChanger.newScene = "WinMenu";
+            sceneChanger.GoToScene();
+            //notifyTray.AddNotification("GAME OVER");
+        }
+    }
+
     #endregion
 }

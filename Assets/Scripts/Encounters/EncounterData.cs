@@ -5,7 +5,7 @@ using UnityEngine;
 public enum EncounterType { Seasonal = 0, Tick = 1};
 public enum Year { Year1 = 1, Year2 = 2, Year3 = 3 };
 public enum EffectType { Population = 0, Grain = 1, Lumber = 2, Sterling = 3, FireChance = 4, FarmScaler = 5, MillScaler = 6, MarketScaler = 7, StarvationScaler = 8, ExposerScaler = 9 }
-public enum EffectEquation { standard = 0, percentage = 1 }
+public enum EffectEquation { standard = 0, percentage = 1, cannibal =2 }
 
 [CreateAssetMenu(menuName = "Encounter Data", fileName = "Encounters", order = 1)]
 
