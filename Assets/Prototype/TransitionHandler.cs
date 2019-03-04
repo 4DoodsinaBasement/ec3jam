@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TransitionHandler : MonoBehaviour
 {
@@ -90,24 +91,27 @@ public class TransitionHandler : MonoBehaviour
 
     public void TextTransition()
     {
-        Color currentColor;
+        float currentColor;
         for (int i = 1; i < TransitionItems.Length; i++)
         {
-            Text Item = TransitionItems[i].GetComponent<Text>();
+            TextMeshProUGUI Item = TransitionItems[i].GetComponent<TextMeshProUGUI>();
             Item.gameObject.SetActive(true);
-            currentColor = Item.color;
+            currentColor = Item.alpha;
 
+            //if(i == 1) { Item.fontSize = 200; }
+
+            Item.alignment = TMPro.TextAlignmentOptions.Center;
             if (fadeIn)
             {
                 index = counter2 / rate;
-                currentColor.a = transparency[(transparency.Count) - (index) - 1];
+                currentColor = transparency[(transparency.Count) - (index) - 1];
             }
             if (fadeOut)
             {
                 index = counter2 / rateOut;
-                currentColor.a = transparency[index];
+                currentColor = transparency[index];
             }
-            Item.color = currentColor;
+            Item.alpha = currentColor;
             if (counter2 >= rate * transparency.Count)
             {
                 counter2 = 0;
