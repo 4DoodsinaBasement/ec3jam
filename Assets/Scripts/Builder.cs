@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Builder : MonoBehaviour
 {
@@ -12,14 +13,14 @@ public class Builder : MonoBehaviour
     Image image;
 
     public TileType buildingType;
-    public Text title;
-    public Text description;
-    public Text cost_time;
-    public Text cost_grain;
-    public Text cost_lumber;
-    public Text cost_sterling;
-    public Text upkeep_lumber;
-    public Text upkeep_sterling;
+    public TextMeshProUGUI title;
+    public TextMeshProUGUI description;
+    public TextMeshProUGUI cost_time;
+    public TextMeshProUGUI cost_grain;
+    public TextMeshProUGUI cost_lumber;
+    public TextMeshProUGUI cost_sterling;
+    public TextMeshProUGUI upkeep_lumber;
+    public TextMeshProUGUI upkeep_sterling;
 
     void Start()
     {
@@ -92,20 +93,24 @@ public class Builder : MonoBehaviour
     public void BuildCottage()
     {
         gameMaster.BuildBuilding(TileType.Cottage);
+        infoMenu.gameObject.SetActive(false);
     }
 
     public void BuildFarm()
     {
         gameMaster.BuildBuilding(TileType.Farm);
+        infoMenu.gameObject.SetActive(false);
     }
 
     public void BuildMill()
     {
         gameMaster.BuildBuilding(TileType.Mill);
+        infoMenu.gameObject.SetActive(false);
     }
 
     public void BuildMarket()
     {
         gameMaster.BuildBuilding(TileType.Market);
+        infoMenu.gameObject.SetActive(false);
     }
 }
