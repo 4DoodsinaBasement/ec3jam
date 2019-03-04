@@ -37,7 +37,6 @@ public class TileObject : MonoBehaviour
 
     public void SetColor(Color newColor)
     {
-        Debug.Log("New Color");
         render.color = newColor;
     }
 
