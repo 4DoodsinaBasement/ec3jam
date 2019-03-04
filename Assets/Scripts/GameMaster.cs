@@ -98,6 +98,7 @@ public class GameMaster : MonoBehaviour
     void Start()
     {
         currentSeason = seasonData[0];
+        Debug.Log("Season Upkeep into " + currentSeason.seasonString);
         fireChanceOriginal = fireChance;
 
         LoadTiles();
@@ -140,14 +141,14 @@ public class GameMaster : MonoBehaviour
             if (currentTickCount < totalTickCount)
             {
                 GameTick();
-                Debug.Log("Game Tick");
+                Debug.Log("Game Tick " + currentTickCount);
             }
             else
             {
                 currentTickCount = 0;
                 UpdateTiles();
                 notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
-                Debug.Log("Season Upkeep");
+                Debug.Log("Season Upkeep into " + currentSeason.seasonString);
             }
 
 
