@@ -20,6 +20,13 @@ public class GameMaster : MonoBehaviour
     public GameObject passiveGridObject;
     public TileObject[] passiveGrid;
     public SeasonData[] seasonData;
+
+    // Music Settings
+    public MusicManager music;
+    public List<float> turnMusicDown = new List<float>();
+    int musicFadeSteps = 100;
+    int musicCounter = 0;
+    public bool fadeOutMusic = false;
     
     // Game Settings
     bool gameOver = false;
@@ -88,6 +95,11 @@ public class GameMaster : MonoBehaviour
         notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
         
         LoadTiles();
+
+        for (int i = 0; i < musicFadeSteps; i++)
+        { turnMusicDown.Add(1.0f - ((1.0f / musicFadeSteps) * i)); }
+        turnMusicDown.Add(0.0f);
+        music.SetTrack(SeasonType.Spring);
     }
     void FixedUpdate()
     {
@@ -129,13 +141,28 @@ public class GameMaster : MonoBehaviour
                 SeasonUpkeep();
                 Debug.Log("Season Upkeep");
             }
+
+
             if(currentTickCount == 9) {
                 transitionHandler.fadeOut = false;
                 transitionHandler.fadeIn = true;
+                fadeOutMusic = true;
             }
             if(currentTickCount == 0){
                 transitionHandler.fadeIn = false;
                 transitionHandler.fadeOut = true;
+                music.SetTrack(currentSeason.seasonType);
+            }
+        }
+
+        if (fadeOutMusic)
+        {
+            music.SetVolume(turnMusicDown[musicCounter++]);
+            if (musicCounter == turnMusicDown.Count - 1)
+            {
+                music.SetVolume(0.0f);
+                musicCounter = 0;
+                fadeOutMusic = false;
             }
         }
     }
@@ -156,15 +183,43 @@ public class GameMaster : MonoBehaviour
         }
         foreach (TileObject tile in passiveGrid)
         {
-            tile.startType = TileType.Field;
-            tile.finishedType = TileType.Field;
+            if (PercentChance(0.15f))
+            {
+                if (PercentChance(0.5f))
+                {
+                    tile.startType = TileType.Rocks1;
+                    tile.finishedType = TileType.Rocks1;
+                }
+                else
+                {
+                    tile.startType = TileType.Rocks2;
+                    tile.finishedType = TileType.Rocks2;
+                }
+            }
+            else
+            {
+                tile.startType = TileType.Field;
+                tile.finishedType = TileType.Field;
+            }
             tile.seasonType = currentSeason.seasonType;
+            tile.SetColor(new Color(0.9f, 0.9f, 0.9f));
         }
     }
     void UpdateTiles()
     {
         foreach (TileObject tile in activeGrid) { tile.seasonType = currentSeason.seasonType; }
-        foreach (TileObject tile in passiveGrid) { tile.seasonType = currentSeason.seasonType; }
+        foreach (TileObject tile in passiveGrid)
+        {
+            tile.seasonType = currentSeason.seasonType;
+
+            switch(tile.seasonType)
+            {
+                case SeasonType.Spring : tile.SetColor(new Color(0.9f, 0.9f, 0.9f, 1.0f)); break;
+                case SeasonType.Summer : tile.SetColor(new Color(0.85f, 0.85f, 0.85f, 1.0f)); break;
+                case SeasonType.Autumn : tile.SetColor(new Color(0.92f, 0.92f, 0.92f, 1.0f)); break;
+                case SeasonType.Winter : tile.SetColor(new Color(0.82f, 0.82f, 0.82f, 1.0f)); break;
+            }
+        }
     }
     #endregion
 
