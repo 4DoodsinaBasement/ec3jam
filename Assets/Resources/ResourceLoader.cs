@@ -19,16 +19,16 @@ public static class ResourceLoader
 
     static ResourceLoader()
     {
-        spriteSheet_rocks1 = Resources.LoadAll<Sprite>("Sprites/tile-rocks1");
-        spriteSheet_rocks2 = Resources.LoadAll<Sprite>("Sprites/tile-rocks2");
-        spriteSheet_rocks3 = Resources.LoadAll<Sprite>("Sprites/tile-rocks3");
-        spriteSheet_rocks4 = Resources.LoadAll<Sprite>("Sprites/tile-rocks4");
-        spriteSheet_fire = Resources.LoadAll<Sprite>("Sprites/tile-fire");
-        spriteSheet_field = Resources.LoadAll<Sprite>("Sprites/tile-field");
-        spriteSheet_cottage = Resources.LoadAll<Sprite>("Sprites/tile-cottage");
-        spriteSheet_farm = Resources.LoadAll<Sprite>("Sprites/tile-farm");
-        spriteSheet_mill = Resources.LoadAll<Sprite>("Sprites/tile-mill");
-        spriteSheet_market = Resources.LoadAll<Sprite>("Sprites/tile-market");
+        spriteSheet_rocks1 = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-rocks1");
+        spriteSheet_rocks2 = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-rocks2");
+        spriteSheet_rocks3 = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-rocks3");
+        spriteSheet_rocks4 = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-rocks4");
+        spriteSheet_fire = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-fire");
+        spriteSheet_field = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-field");
+        spriteSheet_cottage = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-cottage");
+        spriteSheet_farm = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-farm");
+        spriteSheet_mill = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-mill");
+        spriteSheet_market = Resources.LoadAll<Sprite>("Sprites/Tiles/tile-market");
 
         gameMusic[0] = Resources.Load<AudioClip>("Music/Spring");
         gameMusic[1] = Resources.Load<AudioClip>("Music/Summer");
