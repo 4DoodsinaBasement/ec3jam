@@ -7,8 +7,22 @@ using TMPro;
 public class NotificationManager : MonoBehaviour
 {
     public TextMeshProUGUI tray;
+    public AudioSource source;
     Queue<string> notifications = new Queue<string>();
     public int maxDisplayedNotifications = 20;
+
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+
+        notifications.Enqueue("Welcome to Roanoke!");
+        notifications.Enqueue("Spring of 1587");
+        tray.text = "";
+        foreach (string notify in notifications)
+        {
+            tray.text += "\n" + notify;
+        }
+    }
 
     public void AddNotification(string message)
     {
@@ -28,5 +42,6 @@ public class NotificationManager : MonoBehaviour
         {
             tray.text += "\n" + notify;
         }
+        source.Play();
     }
 }

@@ -91,8 +91,6 @@ public class GameMaster : MonoBehaviour
     void Start()
     {
         currentSeason = seasonData[0];
-        notifyTray.AddNotification("Welcome to Roanoke!");
-        notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
         
         LoadTiles();
 
