@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 9ef0e2dba5a7ab3439671485a19f3978
+guid: fccf7c419b4a80f46aca5b1f4b22ace1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tile-mill_0
-    21300002: tile-mill_1
-    21300004: tile-mill_2
-    21300006: tile-mill_3
+    21300000: tile - lumberyard1_0
+    21300002: tile - lumberyard1_1
+    21300004: tile - lumberyard1_2
+    21300006: tile - lumberyard1_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -77,18 +77,18 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -99,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile-mill_0
+      name: tile - lumberyard1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,13 +113,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c240f68cdfbab54db2da6ceeb6507e1
+      spriteID: 91659d3215a579e46a3829da609a8ca3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-mill_1
+      name: tile - lumberyard1_1
       rect:
         serializedVersion: 2
         x: 0
@@ -133,13 +133,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d670b172eb30c3048a52c85c2eb3b96d
+      spriteID: 0818a1ca452e71e4bbc40dea82571f4e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-mill_2
+      name: tile - lumberyard1_2
       rect:
         serializedVersion: 2
         x: 0
@@ -153,13 +153,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81a64a0f392eb09439df849c2062c618
+      spriteID: 9c6574b040b01074fba3f6118bf1bce5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-mill_3
+      name: tile - lumberyard1_3
       rect:
         serializedVersion: 2
         x: 0
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e353f9478f46d0948ba31616f605a90a
+      spriteID: 8e19ffc7b9add9f46ad325df39e30c98
       vertices: []
       indices: 
       edges: []
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0e47ec12a5a579448a2a1b7f47f4ee12
+    spriteID: c5adb0036c1898b4aab316a1b4857a2d
     vertices: []
     indices: 
     edges: []

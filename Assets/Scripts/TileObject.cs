@@ -15,9 +15,9 @@ public class TileObject : MonoBehaviour
 
     float tintAmount = 0.95f;
 
-    void Start()
+    void Awake()
     {
-        render = gameObject.GetComponent<SpriteRenderer>();
+        render = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -27,15 +27,24 @@ public class TileObject : MonoBehaviour
 
         if (startType != finishedType)
         {
-            Color temp = render.color;
-            temp.a = 0.25f;
-            render.color = temp;
+            SetAlpha(0.3f);
         }
         else
         {
-            Color temp = render.color;
-            temp.a = 1.0f;
-            render.color = temp;
+            SetAlpha(1.0f);
         }
+    }
+
+    public void SetColor(Color newColor)
+    {
+        Debug.Log("New Color");
+        render.color = newColor;
+    }
+
+    public void SetAlpha(float newAlpha)
+    {
+        Color temp = render.color;
+        temp.a = newAlpha;
+        render.color = temp;
     }
 }
