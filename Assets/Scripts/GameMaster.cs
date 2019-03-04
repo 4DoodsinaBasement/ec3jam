@@ -21,6 +21,13 @@ public class GameMaster : MonoBehaviour
     public TileObject[] passiveGrid;
     public SeasonData[] seasonData;
 
+    // Music Settings
+    public MusicManager music;
+    public List<float> turnMusicDown = new List<float>();
+    int musicFadeSteps = 100;
+    int musicCounter = 0;
+    public bool fadeOutMusic = false;
+    
     // Game Settings
     bool gameOver = false;
     const int ESTABLISH_YEAR = 1587;
@@ -30,9 +37,10 @@ public class GameMaster : MonoBehaviour
     // Time Settings
     int maxTurns = 12; // number of maxiumn turns
     public int currentTurns = 0;
-    float totalTurnTime = 60;
+    public float totalTurnTime = 60;
+    public int totalTickCount = 10;
+    public float totalTickTime = 6;
     public float currentTickCount = 0;
-    float totalTickTime = 6;
     public float currentTickTime = 0;
     int counter = 0;
 
@@ -90,11 +98,14 @@ public class GameMaster : MonoBehaviour
     void Start()
     {
         currentSeason = seasonData[0];
-        notifyTray.AddNotification("Welcome to Roanoke!");
-        notifyTray.AddNotification(currentSeason.seasonString + " of year " + (ESTABLISH_YEAR + (currentTurns / 4)));
         fireChanceOriginal = fireChance;
 
         LoadTiles();
+
+        for (int i = 0; i < musicFadeSteps; i++)
+        { turnMusicDown.Add(1.0f - ((1.0f / musicFadeSteps) * i)); }
+        turnMusicDown.Add(0.0f);
+        music.SetTrack(SeasonType.Spring);
     }
     void FixedUpdate()
     {
@@ -126,7 +137,7 @@ public class GameMaster : MonoBehaviour
         if (currentTickTime >= totalTickTime)
         {
             currentTickTime = 0; currentTickCount++;
-            if (currentTickCount < 10)
+            if (currentTickCount < totalTickCount)
             {
                 GameTick();
                 Debug.Log("Game Tick");
@@ -144,10 +155,23 @@ public class GameMaster : MonoBehaviour
                 SeasonUpkeep();
                 transitionHandler.fadeOut = false;
                 transitionHandler.fadeIn = true;
+                fadeOutMusic = true;
             }
             if (currentTickCount == 0) {
                 transitionHandler.fadeIn = false;
                 transitionHandler.fadeOut = true;
+                music.SetTrack(currentSeason.seasonType);
+            }
+        }
+
+        if (fadeOutMusic)
+        {
+            music.SetVolume(turnMusicDown[musicCounter++]);
+            if (musicCounter == turnMusicDown.Count - 1)
+            {
+                music.SetVolume(0.0f);
+                musicCounter = 0;
+                fadeOutMusic = false;
             }
         }
     }
@@ -168,15 +192,43 @@ public class GameMaster : MonoBehaviour
         }
         foreach (TileObject tile in passiveGrid)
         {
-            tile.startType = TileType.Field;
-            tile.finishedType = TileType.Field;
+            if (PercentChance(0.15f))
+            {
+                if (PercentChance(0.5f))
+                {
+                    tile.startType = TileType.Rocks1;
+                    tile.finishedType = TileType.Rocks1;
+                }
+                else
+                {
+                    tile.startType = TileType.Rocks2;
+                    tile.finishedType = TileType.Rocks2;
+                }
+            }
+            else
+            {
+                tile.startType = TileType.Field;
+                tile.finishedType = TileType.Field;
+            }
             tile.seasonType = currentSeason.seasonType;
+            tile.SetColor(new Color(0.9f, 0.9f, 0.9f));
         }
     }
     void UpdateTiles()
     {
         foreach (TileObject tile in activeGrid) { tile.seasonType = currentSeason.seasonType; }
-        foreach (TileObject tile in passiveGrid) { tile.seasonType = currentSeason.seasonType; }
+        foreach (TileObject tile in passiveGrid)
+        {
+            tile.seasonType = currentSeason.seasonType;
+
+            switch(tile.seasonType)
+            {
+                case SeasonType.Spring : tile.SetColor(new Color(0.9f, 0.9f, 0.9f, 1.0f)); break;
+                case SeasonType.Summer : tile.SetColor(new Color(0.85f, 0.85f, 0.85f, 1.0f)); break;
+                case SeasonType.Autumn : tile.SetColor(new Color(0.92f, 0.92f, 0.92f, 1.0f)); break;
+                case SeasonType.Winter : tile.SetColor(new Color(0.82f, 0.82f, 0.82f, 1.0f)); break;
+            }
+        }
     }
     #endregion
 
